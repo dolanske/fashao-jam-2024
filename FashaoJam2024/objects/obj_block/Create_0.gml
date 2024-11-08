@@ -1,0 +1,5 @@
+enum BlockState {
+	FALLING,
+	TILTING
+}
+
