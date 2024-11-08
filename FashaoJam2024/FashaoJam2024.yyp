@@ -31,7 +31,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"FashaoJam2024",
   "resources":[
@@ -41,8 +41,8 @@
     {"id":{"name":"obj_stem","path":"objects/obj_stem/obj_stem.yy",},},
     {"id":{"name":"main","path":"rooms/main/main.yy",},},
     {"id":{"name":"spr_block_base","path":"sprites/spr_block_base/spr_block_base.yy",},},
-    {"id":{"name":"spr_rope","path":"sprites/spr_rope/spr_rope.yy",},},
     {"id":{"name":"spr_block_stem","path":"sprites/spr_block_stem/spr_block_stem.yy",},},
+    {"id":{"name":"spr_rope","path":"sprites/spr_rope/spr_rope.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
