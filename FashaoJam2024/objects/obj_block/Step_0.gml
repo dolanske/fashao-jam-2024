@@ -1,0 +1,1 @@
+image_angle = lerp(image_angle,270,0.05);
