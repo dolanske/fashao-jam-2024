@@ -11,3 +11,5 @@ block_spd = 0; //speed of the block
 block_dir = 0; //direction of block
 
 rope_dist = 0;
+
+drop_cd = 0;

@@ -10,8 +10,9 @@ var cam_y = camera_get_view_y(cam);
 var joint_x = cam_x+cam_w/2;
 var joint_y = cam_y-500;
 //draw rope
-draw_sprite_ext(spr_rope,0,joint_x,joint_y,rope_dist,0.25,jerab_dir,c_white,1);
+draw_sprite_ext(spr_rope,0,joint_x+lengthdir_x(rope_dist,jerab_dir),joint_y+lengthdir_y(rope_dist,jerab_dir),0.25,2,jerab_dir-270,c_white,1);
 
 //draw block
-draw_sprite_ext(spr_block_base,0,joint_x+lengthdir_x(rope_dist,jerab_dir),joint_y+lengthdir_y(rope_dist,jerab_dir),1,1,jerab_dir,c_white,1);
+if (drop_cd <= 20)
+	draw_sprite_ext(spr_block_base,0,joint_x+lengthdir_x(rope_dist+sprite_get_height(current_block),jerab_dir),joint_y+lengthdir_y(rope_dist+sprite_get_height(current_block),jerab_dir),1,1,jerab_dir,c_white,1);
 
