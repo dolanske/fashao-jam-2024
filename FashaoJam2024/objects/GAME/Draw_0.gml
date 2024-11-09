@@ -14,7 +14,7 @@ draw_sprite_ext(spr_rope,0,joint_x+lengthdir_x(rope_dist,jerab_dir),joint_y+leng
 
 //draw block
 if (drop_cd <= 20)
-	draw_sprite_ext(spr_block_base,0,joint_x+lengthdir_x(rope_dist+sprite_get_height(current_block),jerab_dir),joint_y+lengthdir_y(rope_dist+sprite_get_height(current_block),jerab_dir),1,1,jerab_dir,c_white,1);
+	draw_sprite_ext(spr_block_base,0,joint_x+lengthdir_x(rope_dist+sprite_get_height(current_block_sprite),jerab_dir),joint_y+lengthdir_y(rope_dist+sprite_get_height(current_block_sprite),jerab_dir),1,1,jerab_dir,c_white,1);
 
 //////////////////////////
 

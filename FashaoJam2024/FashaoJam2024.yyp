@@ -41,6 +41,8 @@
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"spr_block_base_falling","path":"sprites/spr_block_base_falling/spr_block_base_falling.yy",},},
     {"id":{"name":"spr_block_base","path":"sprites/spr_block_base/spr_block_base.yy",},},
+    {"id":{"name":"spr_block_expand_falling","path":"sprites/spr_block_expand_falling/spr_block_expand_falling.yy",},},
+    {"id":{"name":"spr_block_expand","path":"sprites/spr_block_expand/spr_block_expand.yy",},},
     {"id":{"name":"spr_block_stem","path":"sprites/spr_block_stem/spr_block_stem.yy",},},
     {"id":{"name":"spr_clouds","path":"sprites/spr_clouds/spr_clouds.yy",},},
     {"id":{"name":"spr_rope","path":"sprites/spr_rope/spr_rope.yy",},},

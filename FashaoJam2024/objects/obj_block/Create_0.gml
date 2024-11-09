@@ -1,9 +1,16 @@
+enum BlockType {
+	BASE,
+	EXPAND,
+	HEAL
+}
+
 enum BlockState {
 	FALLING,
 	STOPPED
 }
 
 state = BlockState.FALLING
+type = BlockType.BASE
 
 sprite_index = spr_block_base;
 image_speed = 0;
@@ -18,7 +25,7 @@ block_dist = 0;
 
 top = 1;
 
-// Store how far 
+// Store how far from the center we've placed the next block
 placed_rating = Rating.NONE
 placed_effect_active = false
 

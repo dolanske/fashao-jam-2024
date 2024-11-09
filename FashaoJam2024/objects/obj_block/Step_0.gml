@@ -39,6 +39,10 @@ if (state == BlockState.FALLING) {
 				return
 			}
 			
+			if (type == BlockType.EXPAND) {
+				// TODO: expand block, can use the rating to multiply without if else / switch for this
+			}
+			
 			// This will increment the game points. If you score S, it will add 5 points
 			// Because enums start at 0 and move up, D = 4
 			GAME.points += 5 - placed_rating
@@ -79,7 +83,7 @@ if (state == BlockState.FALLING) {
 			image_xscale = 0.9;
 			
 			//setting camera position
-			CAMERA.target_y = y-180;
+			CAMERA.target_y = y - 180;
 			shake = 5;
 			return
 		} else {
