@@ -1,0 +1,312 @@
+You are using YYP Maker v1.1.5, released in 14-08-2022
+
+
+
+[09-11-2024 22:05:28] Initialized GameMaker Project: FashaoJam2024.yyp
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/animcurves
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/extensions
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/fonts
+[09-11-2024 22:05:28] Checking font_lg
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/fonts/font_lg
+[09-11-2024 22:05:28] Checking font
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/fonts/font
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/fonts/font
+[09-11-2024 22:05:28] Checking font.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/fonts/font/font.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/fonts/font/font.yy
+[09-11-2024 22:05:28] Par: "folders/Fonts" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/fonts/font/font.yy"
+[09-11-2024 22:05:28] Found Font: font
+[09-11-2024 22:05:28] Checking font.png
+[09-11-2024 22:05:28] Checking font.old.yy
+[09-11-2024 22:05:28] Trash file: font.old.yy, will be moved to ___yyp_maker_trash
+[09-11-2024 22:05:28] Checking font.old.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/fonts/font_lg
+[09-11-2024 22:05:28] Checking font_lg.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/fonts/font_lg/font_lg.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/fonts/font_lg/font_lg.yy
+[09-11-2024 22:05:28] Par: "folders/Fonts" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/fonts/font_lg/font_lg.yy"
+[09-11-2024 22:05:28] Found Font: font_lg
+[09-11-2024 22:05:28] Checking font_lg.png
+[09-11-2024 22:05:28] Checking font_lg.old.yy
+[09-11-2024 22:05:28] Trash file: font_lg.old.yy, will be moved to ___yyp_maker_trash
+[09-11-2024 22:05:28] Checking font_lg.old.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/notes
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects
+[09-11-2024 22:05:28] Checking obj_stem
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_stem
+[09-11-2024 22:05:28] Checking obj_sky
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_sky
+[09-11-2024 22:05:28] Checking obj_block_falling
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_block_falling
+[09-11-2024 22:05:28] Checking obj_block
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_block
+[09-11-2024 22:05:28] Checking GAME
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/GAME
+[09-11-2024 22:05:28] Checking CAMERA
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/CAMERA
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/CAMERA
+[09-11-2024 22:05:28] Checking Step_0.gml
+[09-11-2024 22:05:28] Checking Create_0.gml
+[09-11-2024 22:05:28] Checking CAMERA.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/CAMERA/CAMERA.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/CAMERA/CAMERA.yy
+[09-11-2024 22:05:28] Par: "folders/Objects/Controllers" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/CAMERA/CAMERA.yy"
+[09-11-2024 22:05:28] Found Object: CAMERA
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/GAME
+[09-11-2024 22:05:28] Checking Step_2.gml
+[09-11-2024 22:05:28] Checking Step_0.gml
+[09-11-2024 22:05:28] Checking KeyPress_82.gml
+[09-11-2024 22:05:28] Checking KeyPress_32.gml
+[09-11-2024 22:05:28] Checking KeyPress_27.gml
+[09-11-2024 22:05:28] Checking GAME.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/GAME/GAME.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/GAME/GAME.yy
+[09-11-2024 22:05:28] Par: "folders/Objects/Controllers" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/GAME/GAME.yy"
+[09-11-2024 22:05:28] Found Object: GAME
+[09-11-2024 22:05:28] Checking Draw_0.gml
+[09-11-2024 22:05:28] Checking Create_0.gml
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_block
+[09-11-2024 22:05:28] Checking Step_0.gml
+[09-11-2024 22:05:28] Checking obj_block.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_block/obj_block.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_block/obj_block.yy
+[09-11-2024 22:05:28] Par: "folders/Objects" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_block/obj_block.yy"
+[09-11-2024 22:05:28] Found Object: obj_block
+[09-11-2024 22:05:28] Checking Draw_0.gml
+[09-11-2024 22:05:28] Checking Create_0.gml
+[09-11-2024 22:05:28] Checking Alarm_0.gml
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_block_falling
+[09-11-2024 22:05:28] Checking Step_0.gml
+[09-11-2024 22:05:28] Checking obj_block_falling.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_block_falling/obj_block_falling.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_block_falling/obj_block_falling.yy
+[09-11-2024 22:05:28] Par: "folders/Objects/VFX" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_block_falling/obj_block_falling.yy"
+[09-11-2024 22:05:28] Found Object: obj_block_falling
+[09-11-2024 22:05:28] Checking Create_0.gml
+[09-11-2024 22:05:28] Checking Alarm_0.gml
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_sky
+[09-11-2024 22:05:28] Checking Step_0.gml
+[09-11-2024 22:05:28] Checking obj_sky.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_sky/obj_sky.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_sky/obj_sky.yy
+[09-11-2024 22:05:28] Par: "folders/Objects/BG" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_sky/obj_sky.yy"
+[09-11-2024 22:05:28] Found Object: obj_sky
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_stem
+[09-11-2024 22:05:28] Checking Step_0.gml
+[09-11-2024 22:05:28] Checking obj_stem.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_stem/obj_stem.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_stem/obj_stem.yy
+[09-11-2024 22:05:28] Par: "folders/Objects" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/objects/obj_stem/obj_stem.yy"
+[09-11-2024 22:05:28] Found Object: obj_stem
+[09-11-2024 22:05:28] Checking Draw_0.gml
+[09-11-2024 22:05:28] Checking Create_0.gml
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options
+[09-11-2024 22:05:28] Checking windows
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/windows
+[09-11-2024 22:05:28] Checking tvos
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/tvos
+[09-11-2024 22:05:28] Checking operagx
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/operagx
+[09-11-2024 22:05:28] Checking main
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/main
+[09-11-2024 22:05:28] Checking mac
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/mac
+[09-11-2024 22:05:28] Checking linux
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/linux
+[09-11-2024 22:05:28] Checking ios
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/ios
+[09-11-2024 22:05:28] Checking html5
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/html5
+[09-11-2024 22:05:28] Checking android
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/android
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/android
+[09-11-2024 22:05:28] Checking options_android.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/android/options_android.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/android/options_android.yy
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/html5
+[09-11-2024 22:05:28] Checking options_html5.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/html5/options_html5.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/html5/options_html5.yy
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/ios
+[09-11-2024 22:05:28] Checking options_ios.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/ios/options_ios.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/ios/options_ios.yy
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/linux
+[09-11-2024 22:05:28] Checking options_linux.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/linux/options_linux.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/linux/options_linux.yy
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/mac
+[09-11-2024 22:05:28] Checking options_mac.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/mac/options_mac.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/mac/options_mac.yy
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/main
+[09-11-2024 22:05:28] Checking options_main.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/main/options_main.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/main/options_main.yy
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/operagx
+[09-11-2024 22:05:28] Checking options_operagx.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/operagx/options_operagx.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/operagx/options_operagx.yy
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/tvos
+[09-11-2024 22:05:28] Checking options_tvos.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/tvos/options_tvos.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/tvos/options_tvos.yy
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/windows
+[09-11-2024 22:05:28] Checking options_windows.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/windows/options_windows.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/options/windows/options_windows.yy
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/paths
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/rooms
+[09-11-2024 22:05:28] Checking main
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/rooms/main
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/rooms/main
+[09-11-2024 22:05:28] Checking main.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/rooms/main/main.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/rooms/main/main.yy
+[09-11-2024 22:05:28] Par: "folders/Rooms" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/rooms/main/main.yy"
+[09-11-2024 22:05:28] Found Room: main
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/scripts
+[09-11-2024 22:05:28] Checking Script1
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/scripts/Script1
+[09-11-2024 22:05:28] Checking globals
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/scripts/globals
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/scripts/globals
+[09-11-2024 22:05:28] Checking globals.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/scripts/globals/globals.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/scripts/globals/globals.yy
+[09-11-2024 22:05:28] Par: "folders/Scripts" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/scripts/globals/globals.yy"
+[09-11-2024 22:05:28] Found Script: globals
+[09-11-2024 22:05:28] Checking globals.gml
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/scripts/Script1
+[09-11-2024 22:05:28] Checking Script1.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/scripts/Script1/Script1.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/scripts/Script1/Script1.yy
+[09-11-2024 22:05:28] Par: "folders/Scripts" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/scripts/Script1/Script1.yy"
+[09-11-2024 22:05:28] Found Script: Script1
+[09-11-2024 22:05:28] Checking Script1.gml
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sequences
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/shaders
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sounds
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites
+[09-11-2024 22:05:28] Checking spr_sky
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_sky
+[09-11-2024 22:05:28] Checking spr_rope
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_rope
+[09-11-2024 22:05:28] Checking spr_clouds
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds
+[09-11-2024 22:05:28] Checking spr_block_stem
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_stem
+[09-11-2024 22:05:28] Checking spr_block_base_falling
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base_falling
+[09-11-2024 22:05:28] Checking spr_block_base
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base
+[09-11-2024 22:05:28] Checking spr_block_base.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base/spr_block_base.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base/spr_block_base.yy
+[09-11-2024 22:05:28] Par: "folders/Sprites" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base/spr_block_base.yy"
+[09-11-2024 22:05:28] Found Sprite: spr_block_base
+[09-11-2024 22:05:28] Checking layers
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base/layers
+[09-11-2024 22:05:28] Checking 283087a8-fd07-4ec6-a48b-23633247e7ee.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base/layers
+[09-11-2024 22:05:28] Checking 283087a8-fd07-4ec6-a48b-23633247e7ee
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base/layers/283087a8-fd07-4ec6-a48b-23633247e7ee
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base/layers/283087a8-fd07-4ec6-a48b-23633247e7ee
+[09-11-2024 22:05:28] Checking c4d70417-3fc5-4370-8275-2dc10b2bde75.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base_falling
+[09-11-2024 22:05:28] Checking spr_block_base_falling.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base_falling/spr_block_base_falling.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base_falling/spr_block_base_falling.yy
+[09-11-2024 22:05:28] Par: "folders/Sprites" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base_falling/spr_block_base_falling.yy"
+[09-11-2024 22:05:28] Found Sprite: spr_block_base_falling
+[09-11-2024 22:05:28] Checking layers
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base_falling/layers
+[09-11-2024 22:05:28] Checking 283087a8-fd07-4ec6-a48b-23633247e7ee.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base_falling/layers
+[09-11-2024 22:05:28] Checking 283087a8-fd07-4ec6-a48b-23633247e7ee
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base_falling/layers/283087a8-fd07-4ec6-a48b-23633247e7ee
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_base_falling/layers/283087a8-fd07-4ec6-a48b-23633247e7ee
+[09-11-2024 22:05:28] Checking c4d70417-3fc5-4370-8275-2dc10b2bde75.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_stem
+[09-11-2024 22:05:28] Checking spr_block_stem.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_stem/spr_block_stem.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_stem/spr_block_stem.yy
+[09-11-2024 22:05:28] Par: "folders/Sprites" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_stem/spr_block_stem.yy"
+[09-11-2024 22:05:28] Found Sprite: spr_block_stem
+[09-11-2024 22:05:28] Checking layers
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_stem/layers
+[09-11-2024 22:05:28] Checking a6ee9f8b-46f8-4077-a2a8-a4375e8af6a4.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_stem/layers
+[09-11-2024 22:05:28] Checking a6ee9f8b-46f8-4077-a2a8-a4375e8af6a4
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_stem/layers/a6ee9f8b-46f8-4077-a2a8-a4375e8af6a4
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_block_stem/layers/a6ee9f8b-46f8-4077-a2a8-a4375e8af6a4
+[09-11-2024 22:05:28] Checking 07a6e3f6-5e14-4d69-8ad3-f331418867a4.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds
+[09-11-2024 22:05:28] Checking spr_clouds.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds/spr_clouds.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds/spr_clouds.yy
+[09-11-2024 22:05:28] Par: "folders/Sprites/BG" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds/spr_clouds.yy"
+[09-11-2024 22:05:28] Found Sprite: spr_clouds
+[09-11-2024 22:05:28] Checking layers
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds/layers
+[09-11-2024 22:05:28] Checking a636964f-3c3d-4ff1-9680-d63252f71606.png
+[09-11-2024 22:05:28] Checking 5331b122-f3e6-4fb5-8593-ce1ba0b4092b.png
+[09-11-2024 22:05:28] Checking 2ef0d9b0-828e-4b20-8d35-7f5c105d4612.png
+[09-11-2024 22:05:28] Checking 2c46f0ce-a945-4598-a5c5-941658cac0aa.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds/layers
+[09-11-2024 22:05:28] Checking a636964f-3c3d-4ff1-9680-d63252f71606
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds/layers/a636964f-3c3d-4ff1-9680-d63252f71606
+[09-11-2024 22:05:28] Checking 5331b122-f3e6-4fb5-8593-ce1ba0b4092b
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds/layers/5331b122-f3e6-4fb5-8593-ce1ba0b4092b
+[09-11-2024 22:05:28] Checking 2ef0d9b0-828e-4b20-8d35-7f5c105d4612
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds/layers/2ef0d9b0-828e-4b20-8d35-7f5c105d4612
+[09-11-2024 22:05:28] Checking 2c46f0ce-a945-4598-a5c5-941658cac0aa
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds/layers/2c46f0ce-a945-4598-a5c5-941658cac0aa
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds/layers/2c46f0ce-a945-4598-a5c5-941658cac0aa
+[09-11-2024 22:05:28] Checking f26b5afb-28f1-4472-8857-76f92ab3b973.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds/layers/2ef0d9b0-828e-4b20-8d35-7f5c105d4612
+[09-11-2024 22:05:28] Checking f26b5afb-28f1-4472-8857-76f92ab3b973.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds/layers/5331b122-f3e6-4fb5-8593-ce1ba0b4092b
+[09-11-2024 22:05:28] Checking f26b5afb-28f1-4472-8857-76f92ab3b973.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_clouds/layers/a636964f-3c3d-4ff1-9680-d63252f71606
+[09-11-2024 22:05:28] Checking f26b5afb-28f1-4472-8857-76f92ab3b973.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_rope
+[09-11-2024 22:05:28] Checking spr_rope.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_rope/spr_rope.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_rope/spr_rope.yy
+[09-11-2024 22:05:28] Par: "folders/Sprites" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_rope/spr_rope.yy"
+[09-11-2024 22:05:28] Found Sprite: spr_rope
+[09-11-2024 22:05:28] Checking layers
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_rope/layers
+[09-11-2024 22:05:28] Checking d7482022-1788-4cd2-bc66-5fbda0c679b8.png
+[09-11-2024 22:05:28] Checking c7067110-6cfc-4799-b733-364ef78980c1.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_rope/layers
+[09-11-2024 22:05:28] Checking d7482022-1788-4cd2-bc66-5fbda0c679b8
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_rope/layers/d7482022-1788-4cd2-bc66-5fbda0c679b8
+[09-11-2024 22:05:28] Checking c7067110-6cfc-4799-b733-364ef78980c1
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_rope/layers/c7067110-6cfc-4799-b733-364ef78980c1
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_rope/layers/c7067110-6cfc-4799-b733-364ef78980c1
+[09-11-2024 22:05:28] Checking 7a9f39fa-14b6-40ba-b96d-770a719b3664.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_rope/layers/d7482022-1788-4cd2-bc66-5fbda0c679b8
+[09-11-2024 22:05:28] Checking 7a9f39fa-14b6-40ba-b96d-770a719b3664.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_sky
+[09-11-2024 22:05:28] Checking spr_sky.yy
+[09-11-2024 22:05:28] Parsing C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_sky/spr_sky.yy
+[09-11-2024 22:05:28] Reading C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_sky/spr_sky.yy
+[09-11-2024 22:05:28] Par: "folders/Sprites/BG" at dir: "C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_sky/spr_sky.yy"
+[09-11-2024 22:05:28] Found Sprite: spr_sky
+[09-11-2024 22:05:28] Checking layers
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_sky/layers
+[09-11-2024 22:05:28] Checking 7e0d2d84-00b7-46e3-8cfc-89b00e1e7ae6.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_sky/layers
+[09-11-2024 22:05:28] Checking 7e0d2d84-00b7-46e3-8cfc-89b00e1e7ae6
+[09-11-2024 22:05:28] Directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_sky/layers/7e0d2d84-00b7-46e3-8cfc-89b00e1e7ae6
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/sprites/spr_sky/layers/7e0d2d84-00b7-46e3-8cfc-89b00e1e7ae6
+[09-11-2024 22:05:28] Checking e334a4c1-648e-4d78-91db-35fa5ea38b38.png
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/tilesets
+[09-11-2024 22:05:28] Current parent directory: C:/Users/dolan/Desktop/me/fashao-jam-2024/FashaoJam2024/timelines
+[09-11-2024 22:05:28] Moving files to trash...
+[09-11-2024 22:05:28] Files yeeted successfully!
+[09-11-2024 22:05:28] Generating YYP...
+[09-11-2024 22:05:28] FashaoJam2024.yyp created successfully!

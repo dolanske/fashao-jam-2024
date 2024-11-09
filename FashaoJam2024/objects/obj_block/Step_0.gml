@@ -1,5 +1,12 @@
 if (state == BlockState.FALLING) {
+	// If block is off camera, we know we missed the whole pile
+	if (y > CAMERA.y + CAMERA.camera_h / 2 + sprite_height) {
+		missed_block(speed)
+		return
+	}
+	
 	image_yscale = approach(image_yscale,0.9,0.005);
+	
 	if (place_meeting(x, y, [obj_block, obj_stem])) {
 		var speed_prev = speed;
 		speed = 0
@@ -31,7 +38,11 @@ if (state == BlockState.FALLING) {
 				missed_block(speed_prev, nearest)
 				return
 			}
-			// TODO: create placing effect & display the rating on the screen
+			
+			// This will increment the game points. If you score S, it will add 5 points
+			// Because enums start at 0 and move up, D = 4
+			GAME.points += 5 - placed_rating
+			GAME.blocks_placed += 1
 			
 			//calculating position
 			block_dir_offset = angle_difference(point_direction(obj_stem.x,obj_stem.y,x,y),obj_stem.dir);
@@ -53,6 +64,9 @@ if (state == BlockState.FALLING) {
 					//iterations --;
 				}
 			}
+			
+			placed_effect_active = true
+			alarm[0] = 90
 			
 			block_dist -= 1;
 			with(obj_block) top = 0;

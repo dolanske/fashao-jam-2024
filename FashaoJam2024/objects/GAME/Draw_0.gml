@@ -16,3 +16,22 @@ draw_sprite_ext(spr_rope,0,joint_x+lengthdir_x(rope_dist,jerab_dir),joint_y+leng
 if (drop_cd <= 20)
 	draw_sprite_ext(spr_block_base,0,joint_x+lengthdir_x(rope_dist+sprite_get_height(current_block),jerab_dir),joint_y+lengthdir_y(rope_dist+sprite_get_height(current_block),jerab_dir),1,1,jerab_dir,c_white,1);
 
+//////////////////////////
+
+// Draw the player's points
+var start_x = CAMERA.x - CAMERA.camera_w / 2 + 8
+var start_y = CAMERA.y - CAMERA.camera_h / 2 + 8
+
+// Draw score
+draw_set_font(font)
+draw_text(start_x, start_y, "Score")
+var score_text_height = string_height("Score")
+draw_set_font(font_lg)
+draw_text(start_x, start_y + score_text_height, points)
+
+
+// Draw health
+draw_set_font(font)
+draw_text(start_x + CAMERA.camera_w - string_width("Health") - 16, start_y, "Health")
+draw_set_font(font_lg)
+draw_text(start_x + CAMERA.camera_w - string_width(hp) - 16, start_y + score_text_height, hp)
