@@ -1,7 +1,6 @@
 dir = sin(a)*amplitude*swing;
 a += 0.05;
 
-
 image_angle = dir;
 
 image_xscale = lerp(image_xscale,1,0.2);

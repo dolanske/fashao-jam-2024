@@ -9,7 +9,7 @@ if (state == BlockState.FALLING) {
 		x += 1000;
 		var nearest = instance_nearest(x-1000,y,obj_block);
 		x -= 1000;
-		if (nearest.top = 1){
+		if (nearest.top = 1) {
 			//calculating position
 			block_dir_offset = angle_difference(point_direction(obj_stem.x,obj_stem.y,x,y),obj_stem.dir);
 			block_dist = point_distance(obj_stem.x,obj_stem.y,x,y);
@@ -36,6 +36,30 @@ if (state == BlockState.FALLING) {
 			
 			with(obj_stem) length = other.block_dist;
 			
+			// Calculate score based on the distance between 
+			// the center and the nearest block center
+			var offset = abs((x + sprite_width / 2) - (nearest.x + nearest.sprite_width / 2))
+			
+			// The max x offset can be width of the sprite - 1
+			var perct = sprite_width / offset
+			
+			if (perc >= 98) {
+				placed_rating = Rating.S
+			} else if (perc < 98 && perc >= 90) {
+				placed_rating = Rating.A
+			} else if (perc < 90 && perc >= 80) {
+				placed_rating = Rating.B
+			} else if (perc < 80 && perc >= 70) {
+				placed_rating = Rating.C
+			} else if (perc < 70 && perc >= 50) {
+				placed_rating = Rating.D
+			} else if (perc < 50 && perc >= 25) {
+				missed_block()
+				return
+			}
+			
+			// TODO: create placing effect & display the rating on the screen
+			
 			//squash vfx
 			image_yscale = 1.2;
 			image_xscale = 0.9;
@@ -43,18 +67,9 @@ if (state == BlockState.FALLING) {
 			//setting camera position
 			CAMERA.target_y = y-180;
 			shake = 5;
-			determine_quality()
 			return
-		}else{
-			CAMERA.shake += 10;
-			var vfx = instance_create_depth(x,y-sprite_get_height(sprite_index)/2,depth-1,obj_block_falling);
-			vfx.sprite_index = asset_get_index(sprite_get_name(sprite_index) + "_falling");
-			vfx.image_index = image_index;
-			vfx.image_angle = image_angle;
-			vfx.speed = speed_prev/2;
-			vfx.direction = point_direction(nearest.x,nearest.y,x,y);
-			vfx.vspeed -= 5;
-			instance_destroy();
+		} else {
+			missed_block()
 		}
 	}
 	
@@ -71,9 +86,9 @@ if (state == BlockState.STOPPED){
 
 if (shake > 0){
 	if (instance_exists(obj_block)){
-			with(instance_nearest(x,y+80,obj_block)){
-				shake = other.shake/2;
-			}
+		with(instance_nearest(x,y+80,obj_block)){
+			shake = other.shake/2;
 		}
+	}
 	shake = approach(shake,0,1);
 }

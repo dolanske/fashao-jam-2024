@@ -18,11 +18,21 @@ block_dist = 0;
 
 top = 1;
 
-// Quality
-// Store how well was the block placed
-center_offset = 0
+// Store how far 
+placed_rating = Rating.NONE
 
-function determine_quality() {
-	var collided_instance = collision_rectangle(x - 100, y, x + sprite_width + 100, y + sprite_height + 5, [obj_stem, obj_block], true, true)
-	show_debug_message(collided_instance)
+// Will throw the block off and reduce health
+function missed_block() {
+	GAME.hp -= 1
+	CAMERA.shake += 10;
+	
+	var vfx = instance_create_depth(x,y-sprite_get_height(sprite_index)/2,depth-1,obj_block_falling);
+	vfx.sprite_index = asset_get_index(sprite_get_name(sprite_index) + "_falling");
+	vfx.image_index = image_index;
+	vfx.image_angle = image_angle;
+	vfx.speed = speed_prev/2;
+	vfx.direction = point_direction(nearest.x,nearest.y,x,y);
+	vfx.vspeed -= 5;
+	
+	instance_destroy();
 }

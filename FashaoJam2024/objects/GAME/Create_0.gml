@@ -13,3 +13,7 @@ block_dir = 0; //direction of block
 rope_dist = 0;
 
 drop_cd = 0;
+
+// Game score
+points = 0
+hp = 3
