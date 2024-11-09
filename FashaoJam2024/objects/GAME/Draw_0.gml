@@ -29,7 +29,6 @@ var score_text_height = string_height("Score")
 draw_set_font(font_lg)
 draw_text(start_x, start_y + score_text_height, points)
 
-
 // Draw health
 draw_set_font(font)
 draw_text(start_x + CAMERA.camera_w - string_width("Health") - 16, start_y, "Health")
