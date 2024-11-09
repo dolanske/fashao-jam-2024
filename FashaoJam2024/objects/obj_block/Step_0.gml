@@ -15,26 +15,22 @@ if (state == BlockState.FALLING) {
 			var offset = round(abs((x + sprite_width / 2) - (nearest.x + nearest.sprite_width / 2)))
 			
 			// The max x offset can be width of the sprite - 1
-			var perc = (offset / sprite_width) * 100
+			var perc = 100 - (offset / sprite_width) * 100
 			
-			show_debug_message(offset)
-			show_debug_message(perc)
-			show_debug_message("=============")
-			
-			//if (perc >= 98) {
-			//	placed_rating = Rating.S
-			//} else if (perc < 98 && perc >= 90) {
-			//	placed_rating = Rating.A
-			//} else if (perc < 90 && perc >= 80) {
-			//	placed_rating = Rating.B
-			//} else if (perc < 80 && perc >= 70) {
-			//	placed_rating = Rating.C
-			//} else if (perc < 70 && perc >= 40) {
-			//	placed_rating = Rating.D
-			//} else if (perc < 40) {
-			//	missed_block(speed_prev, nearest)
-			//	return
-			//}
+			if (perc >= 98) {
+				placed_rating = Rating.S
+			} else if (perc < 98 && perc >= 90) {
+				placed_rating = Rating.A
+			} else if (perc < 90 && perc >= 80) {
+				placed_rating = Rating.B
+			} else if (perc < 80 && perc >= 70) {
+				placed_rating = Rating.C
+			} else if (perc < 70 && perc >= 40) {
+				placed_rating = Rating.D
+			} else if (perc < 40) {
+				missed_block(speed_prev, nearest)
+				return
+			}
 			// TODO: create placing effect & display the rating on the screen
 			
 			//calculating position
