@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_block_falling",
+  "%Name":"obj_sky",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_block_falling",
+  "name":"obj_sky",
   "overriddenProperties":[],
   "parent":{
-    "name":"VFX",
-    "path":"folders/Objects/VFX.yy",
+    "name":"BG",
+    "path":"folders/Objects/BG.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_sky",
+    "path":"sprites/spr_sky/spr_sky.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
