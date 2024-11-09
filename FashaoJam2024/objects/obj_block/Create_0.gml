@@ -22,7 +22,7 @@ top = 1;
 placed_rating = Rating.NONE
 
 // Will throw the block off and reduce health
-function missed_block() {
+function missed_block(speed_prev, nearest) {
 	GAME.hp -= 1
 	CAMERA.shake += 10;
 	

@@ -10,6 +10,33 @@ if (state == BlockState.FALLING) {
 		var nearest = instance_nearest(x-1000,y,obj_block);
 		x -= 1000;
 		if (nearest.top = 1) {
+			// Calculate score based on the distance between 
+			// the center and the nearest block center
+			var offset = round(abs((x + sprite_width / 2) - (nearest.x + nearest.sprite_width / 2)))
+			
+			// The max x offset can be width of the sprite - 1
+			var perc = (offset / sprite_width) * 100
+			
+			show_debug_message(offset)
+			show_debug_message(perc)
+			show_debug_message("=============")
+			
+			//if (perc >= 98) {
+			//	placed_rating = Rating.S
+			//} else if (perc < 98 && perc >= 90) {
+			//	placed_rating = Rating.A
+			//} else if (perc < 90 && perc >= 80) {
+			//	placed_rating = Rating.B
+			//} else if (perc < 80 && perc >= 70) {
+			//	placed_rating = Rating.C
+			//} else if (perc < 70 && perc >= 40) {
+			//	placed_rating = Rating.D
+			//} else if (perc < 40) {
+			//	missed_block(speed_prev, nearest)
+			//	return
+			//}
+			// TODO: create placing effect & display the rating on the screen
+			
 			//calculating position
 			block_dir_offset = angle_difference(point_direction(obj_stem.x,obj_stem.y,x,y),obj_stem.dir);
 			block_dist = point_distance(obj_stem.x,obj_stem.y,x,y);
@@ -30,35 +57,12 @@ if (state == BlockState.FALLING) {
 					//iterations --;
 				}
 			}
+			
 			block_dist -= 1;
 			with(obj_block) top = 0;
 			top = 1;
 			
 			with(obj_stem) length = other.block_dist;
-			
-			// Calculate score based on the distance between 
-			// the center and the nearest block center
-			var offset = abs((x + sprite_width / 2) - (nearest.x + nearest.sprite_width / 2))
-			
-			// The max x offset can be width of the sprite - 1
-			var perct = sprite_width / offset
-			
-			if (perc >= 98) {
-				placed_rating = Rating.S
-			} else if (perc < 98 && perc >= 90) {
-				placed_rating = Rating.A
-			} else if (perc < 90 && perc >= 80) {
-				placed_rating = Rating.B
-			} else if (perc < 80 && perc >= 70) {
-				placed_rating = Rating.C
-			} else if (perc < 70 && perc >= 50) {
-				placed_rating = Rating.D
-			} else if (perc < 50 && perc >= 25) {
-				missed_block()
-				return
-			}
-			
-			// TODO: create placing effect & display the rating on the screen
 			
 			//squash vfx
 			image_yscale = 1.2;
@@ -69,7 +73,7 @@ if (state == BlockState.FALLING) {
 			shake = 5;
 			return
 		} else {
-			missed_block()
+			missed_block(speed_prev, nearest)
 		}
 	}
 	

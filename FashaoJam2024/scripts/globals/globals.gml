@@ -4,6 +4,5 @@ enum Rating {
 	B,
 	C,
 	D,
-	E,
 	NONE,
 }
