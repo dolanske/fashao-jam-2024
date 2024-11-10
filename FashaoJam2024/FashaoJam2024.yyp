@@ -91,6 +91,7 @@
     {"id":{"name":"spr_china_wall2","path":"sprites/spr_china_wall2/spr_china_wall2.yy",},},
     {"id":{"name":"spr_clouds","path":"sprites/spr_clouds/spr_clouds.yy",},},
     {"id":{"name":"spr_D_tier","path":"sprites/spr_D_tier/spr_D_tier.yy",},},
+    {"id":{"name":"spr_graph","path":"sprites/spr_graph/spr_graph.yy",},},
     {"id":{"name":"spr_ground","path":"sprites/spr_ground/spr_ground.yy",},},
     {"id":{"name":"spr_ground1","path":"sprites/spr_ground1/spr_ground1.yy",},},
     {"id":{"name":"spr_heart","path":"sprites/spr_heart/spr_heart.yy",},},

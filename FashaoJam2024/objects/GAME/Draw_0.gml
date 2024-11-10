@@ -74,7 +74,7 @@ if (state == GameState.INTRO) {
 	draw_rectangle(ge_text_offset - 9, start_y - 8, ge_text_offset + window_get_width(), start_y + window_get_height(), false)
 	draw_set_alpha(1)
 	draw_set_color(c_white)
-	ge_overlay_alpha = lerp(ge_overlay_alpha, 0.75, 0.1)
+	ge_overlay_alpha = lerp(ge_overlay_alpha, 0.8, 0.1)
 	
 	draw_set_font(font_lg)
 	draw_text(ge_text_offset, start_y, ge_title)
@@ -121,4 +121,11 @@ if (state == GameState.INTRO) {
 	draw_set_alpha(1)
 	draw_text(ge_text_offset, start_y + 290, "Misses")
 	draw_text(ge_text_offset + 156, start_y + 290, stats.total_misses)
+	
+	var y_start = obj_stem.y;
+	
+	with(obj_block){
+		draw_sprite_ext(sprite_index,image_index,x/8+start_x+room_width/1.5+32,y/8-y_start+start_y+cam_h+180,image_xscale/8,image_yscale/8,image_angle,c_white,1);
+	}
+	draw_text(250, 300, "Your tower");
 }
