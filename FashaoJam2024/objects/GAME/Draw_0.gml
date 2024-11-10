@@ -127,5 +127,5 @@ if (state == GameState.INTRO) {
 	with(obj_block){
 		draw_sprite_ext(sprite_index,image_index,x/8+start_x+room_width/1.5+32,y/8-y_start+start_y+cam_h+180,image_xscale/8,image_yscale/8,image_angle,c_white,1);
 	}
-	draw_text(250, 300, "Your tower");
+	draw_text(start_x + 250, start_y + 316, "Your tower");
 }
