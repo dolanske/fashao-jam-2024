@@ -37,31 +37,42 @@ drop_cd = 50;
 // Reset clock / sprite animation
 sprite_animation_frame = 0
 
-// Select next block after the current one was dropped
-var chance = random(10)
-
-if (chance < 7) {
+//////// FIXME
+if (current_block_type == BlockType.BULLET) {
 	current_block_sprite = spr_block_base
 	current_block_type = BlockType.BASE
-} else if (chance < 9 && chance >= 7) {
-	// Randomly choose basic modifiers
-	var block_choice = choose(
-		{ sprite: spr_block_expand, type: BlockType.EXPAND },
-		{ sprite: spr_block_narrow, type: BlockType.NARROW },
-	)
-	
-	current_block_sprite = block_choice.sprite
-	current_block_type = block_choice.type
-} else if (chance >= 9.5) {
-	var block_choice = choose(
-		{ sprite: spr_block_heal, type: BlockType.HEAL },
-		{ sprite: spr_block_clock, type: BlockType.CLOCK },	
-		{ sprite: spr_block_bullet, type: BlockType.BULLET }
-	)
-	current_block_sprite = block_choice.sprite
-	current_block_type = block_choice.type
-	
-	if (block_choice.type == BlockType.CLOCK) {
-		alarm[1] = CLOCK_TIMING
-	}
+} else {
+	current_block_sprite = spr_block_bullet
+	current_block_type = BlockType.BULLET
 }
+
+
+
+// Select next block after the current one was dropped
+//var chance = random(10)
+
+//if (chance < 7) {
+//	current_block_sprite = spr_block_base
+//	current_block_type = BlockType.BASE
+//} else if (chance < 9 && chance >= 7) {
+//	// Randomly choose basic modifiers
+//	var block_choice = choose(
+//		{ sprite: spr_block_expand, type: BlockType.EXPAND },
+//		{ sprite: spr_block_narrow, type: BlockType.NARROW },
+//	)
+	
+//	current_block_sprite = block_choice.sprite
+//	current_block_type = block_choice.type
+//} else if (chance >= 9.5) {
+//	var block_choice = choose(
+//		{ sprite: spr_block_heal, type: BlockType.HEAL },
+//		{ sprite: spr_block_clock, type: BlockType.CLOCK },	
+//		{ sprite: spr_block_bullet, type: BlockType.BULLET }
+//	)
+//	current_block_sprite = block_choice.sprite
+//	current_block_type = block_choice.type
+	
+//	if (block_choice.type == BlockType.CLOCK) {
+//		alarm[1] = CLOCK_TIMING
+//	}
+//}

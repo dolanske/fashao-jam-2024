@@ -21,7 +21,7 @@ stats.total_combos = 0
 
 hp = BASE_HP
 points = 0
-combo = 0
+combo_text = ""
 
 sprite_animation_frame = 0
 

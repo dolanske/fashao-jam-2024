@@ -42,16 +42,18 @@ hp = BASE_HP
 
 // Combo starts by getting S and A
 // Combo lasts while the S and A streak is active
-combo = 0
+combo_text = ""
 
 // Ends the combo. Can be called even if combo wasn't happening
 function end_combo() {
-	points += combo
-	if (combo > 0) {
+	var combo_len = string_length(combo_text)
+	points += combo_len
+	
+	if (combo_len > 0) {
 		stats.total_combos += 1
 	}
 	
-	combo = 0
+	combo_text = ""
 }
 
 // Statistics for end screen
@@ -68,3 +70,5 @@ stats = {
 }
 
 alarm[0] = 1; // cloud spawner
+
+audio_play_sound(game_music, 1, true, 0.35)

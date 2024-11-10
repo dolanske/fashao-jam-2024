@@ -19,9 +19,14 @@ drop_cd = approach(drop_cd,0,1);
 // Slow down spinning if current block is bullet type
 if (current_block_instance != noone && !is_undefined(current_block_instance))
 and (variable_instance_exists(current_block_instance, "type") && current_block_instance.type == BlockType.BULLET) {
+	// TODO: idea
+	// CO kdyz pri bullet time si kamera malicko zoomne?
+	
 	jerab_speed = 0.03
-} else if (jerab_speed != JERAB_SPEED_DEFAULT) {
+	audio_sound_pitch(game_music, lerp(audio_sound_get_pitch(game_music), 0.6, 0.01))
+} else {
 	jerab_speed = JERAB_SPEED_DEFAULT
+	audio_sound_pitch(game_music, lerp(audio_sound_get_pitch(game_music), 1, 0.025))
 }
 
 // Happens once when game is finished 

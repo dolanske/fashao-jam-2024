@@ -44,6 +44,7 @@
     {"id":{"name":"main","path":"rooms/main/main.yy",},},
     {"id":{"name":"globals","path":"scripts/globals/globals.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
+    {"id":{"name":"game_music","path":"sounds/game_music/game_music.yy",},},
     {"id":{"name":"spr_block_base_falling","path":"sprites/spr_block_base_falling/spr_block_base_falling.yy",},},
     {"id":{"name":"spr_block_base","path":"sprites/spr_block_base/spr_block_base.yy",},},
     {"id":{"name":"spr_block_bullet_falling","path":"sprites/spr_block_bullet_falling/spr_block_bullet_falling.yy",},},

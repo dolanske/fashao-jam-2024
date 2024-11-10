@@ -38,10 +38,10 @@ draw_set_font(font_lg)
 draw_text(start_x + CAMERA.camera_w - string_width(hp) - 16, start_y + score_text_height, hp)
 
 // Draw combo
-if (combo > 0) {
+if (string_length(combo_text) > 0) {
 	// TODO: better position & hype 
 	draw_set_color(c_black)
-	var combo_string = string("{0} Combo", combo)
-	draw_text(CAMERA.x - string_width(combo_string) / 2, CAMERA.y + CAMERA.camera_h / 2 - 64, combo_string)
+	var str = string("Combo {0}", combo_text)
+	draw_text(CAMERA.x - string_width(str) / 2, CAMERA.y + CAMERA.camera_h / 2 - 64, str)
 	draw_set_color(c_white)
 }

@@ -78,8 +78,8 @@ if (state == BlockState.FALLING) {
 			
 			// If current and previous block have combo
 			if (is_combo_block()) {
-				GAME.combo += 1
-			} else if (GAME.combo != 0) {
+				GAME.combo_text += get_rating_str(placed_rating)
+			} else if (string_length(GAME.combo_text) > 0) {
 				GAME.end_combo()
 			}
 			
