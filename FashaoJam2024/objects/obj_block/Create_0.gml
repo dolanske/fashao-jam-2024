@@ -35,7 +35,6 @@ is_clock_late = false
 
 // Store how far from the center we've placed the next block
 placed_rating = Rating.NONE
-placed_effect_active = false
 
 // Will throw the block off and reduce health
 function missed_block(speed_prev, nearest = undefined) {
@@ -55,7 +54,6 @@ function missed_block(speed_prev, nearest = undefined) {
 		vfx.direction = point_direction(nearest.x,nearest.y,x,y);
 		vfx.vspeed -= 5;
 	}
-	
 	audio_play_sound(
 		choose(sfx_fall_1, sfx_fall_2, sfx_fall_3, sfx_fall_4, sfx_fall_5, sfx_fall_6, sfx_fall_7),
 		1, false 

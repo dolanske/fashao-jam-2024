@@ -80,7 +80,7 @@ if (state == BlockState.FALLING) {
 			
 			// If current and previous block have combo
 			if (is_combo_block()) {
-				GAME.combo_text += get_rating_str(placed_rating)
+				GAME.combo_text += get_rating_str(placed_rating);
 			} else if (string_length(GAME.combo_text) > 0) {
 				GAME.end_combo()
 			}
@@ -108,8 +108,14 @@ if (state == BlockState.FALLING) {
 					block_dist --;
 				}
 			}
-			
-			placed_effect_active = true
+			repeat(5 - placed_rating){
+				var vfx = instance_create_depth(x,y,0,obj_rating_vfx);
+				vfx.sprite_index = asset_get_index(string("spr_{0}_tier",get_rating_str(placed_rating)));
+				vfx.direction = image_angle+90*choose(-1,1)+random_range(-30,30);
+				vfx.vspeed = - 10;
+				vfx.speed = random_range(10,20);
+			}
+
 			alarm[0] = 90
 			
 			block_dist -= 1;

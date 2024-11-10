@@ -1,0 +1,1 @@
+draw_sprite_ext(sprite_index,image_index,x,y,image_xscale*x_scale,image_yscale*y_scale,random_range(-4,4),c_white,1);

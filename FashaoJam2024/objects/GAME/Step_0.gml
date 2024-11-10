@@ -35,6 +35,8 @@ if (hp < 0 && state == GameState.RUNNING) {
 	state = GameState.END
 	audio_stop_sound(game_music)
 	audio_play_sound(game_over_music, 1, true, 0.35)
-	
-	// TODO: endagme screen shit
+	repeat(20){
+		instance_create_depth(CAMERA.x,CAMERA.y+160,-1,obj_head);
+	}
+	audio_play_sound(sfx_laugh_crowd,1,false);
 }
