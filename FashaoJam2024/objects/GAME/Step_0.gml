@@ -23,8 +23,16 @@ and (variable_instance_exists(current_block_instance, "type") && current_block_i
 	// CO kdyz pri bullet time si kamera malicko zoomne?
 	
 	jerab_speed = 0.03
+	with(CAMERA){
+		camera_w = lerp(camera_w,camera_w_default-65,0.2)
+		camera_h = lerp(camera_h,camera_h_default-65,0.2)
+	}
 	audio_sound_pitch(game_music, lerp(audio_sound_get_pitch(game_music), 0.6, 0.01))
 } else {
+	with(CAMERA){
+		camera_w = lerp(camera_w,camera_w_default,0.2)
+		camera_h = lerp(camera_h,camera_h_default,0.2)
+	}
 	jerab_speed = JERAB_SPEED_DEFAULT
 	audio_sound_pitch(game_music, lerp(audio_sound_get_pitch(game_music), 1, 0.025))
 }

@@ -75,6 +75,12 @@ if (state == BlockState.FALLING) {
 			
 			// Rare healing block
 			if (type == BlockType.HEAL) {
+				repeat(5){
+					var vfx = instance_create_depth(x,y,0,obj_heart_vfx);
+					vfx.direction = random(360);
+					vfx.vspeed = - 10;
+					vfx.speed = random_range(20,30);
+				}
 				GAME.hp += 1
 				call_later(15, time_source_units_frames, function () {
 					audio_play_sound(sfx_heal, 1, false)

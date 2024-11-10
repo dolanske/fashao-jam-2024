@@ -1,6 +1,6 @@
 swing = approach(swing_smooth, swing, 0.05)
 
-dir = sin(a)*amplitude*swing;
+dir = sin(a)*amplitude*swing_smooth;
 a += 0.05;
 
 image_angle = dir;
