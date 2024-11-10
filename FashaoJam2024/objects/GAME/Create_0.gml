@@ -9,7 +9,7 @@ enum GameState {
 // Constants
 
 CLOCK_TIMING = 20
-BASE_HP = 0
+BASE_HP = 3
 JERAB_SPEED_DEFAULT = 0.06
 GAME_SLOW_LIMIT = 15
 COMBO_SPLIT = 1
@@ -85,5 +85,5 @@ ge_text_offset = -10
 ge_text_opacity = 0
 
 // IF YOU ADD / CHANGE THESE, copy these two variables to the "Key Press - R" event
-ge_title = choose("Pillar completed", "Time's up!", "Completed", "Doneskis")
-ge_subtitle = choose("Astonishing, beautiful", "Aamazing feng shui", "Thank you builder", "Built by bulder fasho")
+ge_title = choose("Pillar completed", "Time's up!", "Completed", "Doneskis", "Mirakulous!!", "Mao is happy", "BIG NEWS")
+ge_subtitle = choose("Astonishing, beautiful", "Aamazing feng shui", "Thank you builder", "Built by bulder fasho", "Awarded 50 potatoes", "Chinese New York")

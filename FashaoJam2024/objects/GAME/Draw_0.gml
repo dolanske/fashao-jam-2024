@@ -55,7 +55,7 @@ if (state == GameState.INTRO) {
 		draw_set_color(c_white)
 		
 		if (!audio_is_playing(sfx_cheer_crowd)) {
-			audio_play_sound(sfx_cheer_crowd, 1, true)
+			audio_play_sound(sfx_cheer_crowd, 1, true, 0.5, 0, 0.7)
 		}
 	} else {
 		if (audio_is_playing(sfx_cheer_crowd)) {

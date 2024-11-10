@@ -37,8 +37,8 @@ audio_stop_sound(game_music)
 audio_stop_sound(game_over_music)
 audio_play_sound(game_music, 1, true, 0.35)
 
-ge_title = choose("Pillar completed", "Time's up!", "Completed", "Doneskis")
-ge_subtitle = choose("Astonishing, beautiful", "Aamazing feng shui", "Thank you builder", "Built by bulder fasho")
+ge_title = choose("Pillar completed", "Time's up!", "Completed", "Doneskis", "Mirakulous!!", "Mao is happy", "BIG NEWS")
+ge_subtitle = choose("Astonishing, beautiful", "Aamazing feng shui", "Thank you builder", "Built by bulder fasho", "Awarded 50 potatoes", "Chinese New York")
 
 ge_overlay_alpha = 0
 ge_text_offset = -10
