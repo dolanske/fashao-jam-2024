@@ -42,7 +42,7 @@ if (state == BlockState.FALLING) {
 				placed_rating = Rating.S
 				GAME.stats.s_tier_blocks += 1
 				
-				obj_stem.swing_smooth = max(0, obj_stem.swing - 0.5)
+				obj_stem.swing_smooth = max(0, obj_stem.swing - 0.3)
 			} else if (perc < 97 && perc >= 85) {
 				placed_rating = Rating.A
 				GAME.stats.a_tier_blocks += 1
