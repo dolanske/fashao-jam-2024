@@ -58,6 +58,7 @@
     {"id":{"name":"game_music","path":"sounds/game_music/game_music.yy",},},
     {"id":{"name":"game_over_music","path":"sounds/game_over_music/game_over_music.yy",},},
     {"id":{"name":"sfx_bell","path":"sounds/sfx_bell/sfx_bell.yy",},},
+    {"id":{"name":"sfx_cheer_crowd","path":"sounds/sfx_cheer_crowd/sfx_cheer_crowd.yy",},},
     {"id":{"name":"sfx_clock","path":"sounds/sfx_clock/sfx_clock.yy",},},
     {"id":{"name":"sfx_drop","path":"sounds/sfx_drop/sfx_drop.yy",},},
     {"id":{"name":"sfx_fall_1","path":"sounds/sfx_fall_1/sfx_fall_1.yy",},},

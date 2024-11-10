@@ -49,20 +49,22 @@ if (chance < 7) {
 	var block_choice = choose(
 		{ sprite: spr_block_expand, type: BlockType.EXPAND },
 		{ sprite: spr_block_narrow, type: BlockType.NARROW },
+		{ sprite: spr_block_clock, type: BlockType.CLOCK },	
 	)
 	
 	current_block_sprite = block_choice.sprite
 	current_block_type = block_choice.type
-} else if (chance >= 9.5) {
+} else if (chance >= 9) {
 	var block_choice = choose(
 		{ sprite: spr_block_heal, type: BlockType.HEAL },
-		{ sprite: spr_block_clock, type: BlockType.CLOCK },	
 		{ sprite: spr_block_bullet, type: BlockType.BULLET }
 	)
 	current_block_sprite = block_choice.sprite
 	current_block_type = block_choice.type
 	
 	if (block_choice.type == BlockType.CLOCK) {
-		alarm[1] = CLOCK_TIMING
+			call_later(15, time_source_units_frames, function() {
+			alarm[1] = CLOCK_TIMING
+		})
 	}
 }

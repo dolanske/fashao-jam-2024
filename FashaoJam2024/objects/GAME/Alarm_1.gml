@@ -1,9 +1,9 @@
-if (state == GameState.RUNNING) {
+if (state == GameState.RUNNING && current_block_type == BlockType.CLOCK) {
 	// Clock timer
-	audio_play_sound(sfx_clock, 1, false)
 	sprite_animation_frame++
 
 	if (sprite_animation_frame < 8) {
+		audio_play_sound(sfx_clock, 1, false)
 		alarm[1] = CLOCK_TIMING
 	} else {
 		audio_play_sound(sfx_bell, 1, false)
