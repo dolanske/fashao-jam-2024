@@ -46,7 +46,6 @@ if (state == GameState.INTRO) {
 	if (string_length(combo_text) > 0) {
 		// TODO: better position & hype 
 		draw_set_color(c_black)
-		combo_text = "ASASASASASASAS"
 		//draw_text(CAMERA.x - string_width(str) / 2, CAMERA.y + CAMERA.camera_h / 2 - 64, str)
 		for (var i = 1; i < string_length(combo_text)+1; i++){
 			var letter = string_char_at(combo_text,i);
