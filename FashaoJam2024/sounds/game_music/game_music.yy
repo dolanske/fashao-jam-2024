@@ -12,8 +12,8 @@
   "duration":41.08929,
   "name":"game_music",
   "parent":{
-    "name":"FashaoJam2024",
-    "path":"FashaoJam2024.yyp",
+    "name":"Music",
+    "path":"folders/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

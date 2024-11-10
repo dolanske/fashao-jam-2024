@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"game_over_music",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":34.303562,
+  "name":"game_over_music",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"game_over_music.wav",
+  "type":1,
+  "volume":1.0,
+}

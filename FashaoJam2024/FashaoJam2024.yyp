@@ -11,6 +11,8 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Music","folderPath":"folders/Music.yy","name":"Music","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"SFX","folderPath":"folders/Music/SFX.yy","name":"SFX","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"BG","folderPath":"folders/Objects/BG.yy","name":"BG","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Controllers","folderPath":"folders/Objects/Controllers.yy","name":"Controllers","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -45,6 +47,7 @@
     {"id":{"name":"globals","path":"scripts/globals/globals.yy",},},
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"game_music","path":"sounds/game_music/game_music.yy",},},
+    {"id":{"name":"game_over_music","path":"sounds/game_over_music/game_over_music.yy",},},
     {"id":{"name":"spr_block_base_falling","path":"sprites/spr_block_base_falling/spr_block_base_falling.yy",},},
     {"id":{"name":"spr_block_base","path":"sprites/spr_block_base/spr_block_base.yy",},},
     {"id":{"name":"spr_block_bullet_falling","path":"sprites/spr_block_bullet_falling/spr_block_bullet_falling.yy",},},
