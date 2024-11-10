@@ -24,10 +24,6 @@ block.speed = block_spd / 2;
 block.direction = block_dir;
 block.type = current_block_type
 
-if (current_block_type == BlockType.CLOCK) {
-	block.image_speed = 0.1
-}
-
 // Save instance so it can be referenced
 current_block_instance = block
 
