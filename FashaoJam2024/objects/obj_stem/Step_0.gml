@@ -1,3 +1,5 @@
+swing = approach(swing_smooth, swing, 0.05)
+
 dir = sin(a)*amplitude*swing;
 a += 0.05;
 

@@ -42,27 +42,27 @@ if (state == BlockState.FALLING) {
 				placed_rating = Rating.S
 				GAME.stats.s_tier_blocks += 1
 				
-				obj_stem.swing = max(0, obj_stem.swing - 0.5)
+				obj_stem.swing_smooth = max(0, obj_stem.swing - 0.5)
 			} else if (perc < 97 && perc >= 85) {
 				placed_rating = Rating.A
 				GAME.stats.a_tier_blocks += 1
 				
-				obj_stem.swing = max(0, obj_stem.swing - 0.15)
+				obj_stem.swing_smooth = max(0, obj_stem.swing - 0.15)
 			} else if (perc < 85 && perc >= 75) {
 				placed_rating = Rating.B
 				GAME.stats.b_tier_blocks += 1
 				
-				obj_stem.swing = min(1, obj_stem.swing + 0.025)
+				obj_stem.swing_smooth = min(1, obj_stem.swing + 0.025)
 			} else if (perc < 75 && perc >= 62) {
 				placed_rating = Rating.C
 				GAME.stats.c_tier_blocks += 1
 				
-				obj_stem.swing = min(1, obj_stem.swing + 0.05)
+				obj_stem.swing_smooth = min(1, obj_stem.swing + 0.05)
 			} else if (perc < 62 && perc >= 40) {
 				placed_rating = Rating.D
 				GAME.stats.d_tier_blocks += 1
 				
-				obj_stem.swing = min(1, obj_stem.swing + 0.1)
+				obj_stem.swing_smooth = min(1, obj_stem.swing + 0.1)
 			} else if (perc < 40) {
 				missed_block(speed_prev, nearest)
 				return
