@@ -76,7 +76,9 @@ if (state == BlockState.FALLING) {
 			// Rare healing block
 			if (type == BlockType.HEAL) {
 				GAME.hp += 1
-				audio_play_sound(sfx_heal, 1, false)
+				call_later(15, time_source_units_frames, function () {
+					audio_play_sound(sfx_heal, 1, false)
+				})
 			}
 			
 			// If current and previous block have combo
