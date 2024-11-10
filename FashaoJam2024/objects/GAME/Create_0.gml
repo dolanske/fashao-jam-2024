@@ -1,9 +1,19 @@
 randomize()
 
 enum GameState {
+	INTRO,
 	RUNNING,
 	END,
 }
+
+// Constants
+
+CLOCK_TIMING = 20
+BASE_HP = 3
+JERAB_SPEED_DEFAULT = 0.06
+GAME_SLOW_LIMIT = 15
+
+//////////////////////////////////////////
 
 state = GameState.RUNNING
 
@@ -11,20 +21,16 @@ jerab_dir = 0; //direction of jerab
 jerab_dir_prev = 0;
 jerab_a = random(pi * 2);
 
-jerab_speed_default = 0.06
-jerab_speed = jerab_speed_default; //how fast does jerab swing
+jerab_speed = JERAB_SPEED_DEFAULT; //how fast does jerab swing
 
 current_block_sprite = spr_block_base;
 current_block_type = BlockType.BASE
 current_block_instance = noone
 
 sprite_animation_frame = 0
-CLOCK_TIMING = 20
 
 block_spd = 0; //speed of the block
 block_dir = 0; //direction of block
-
-game_slow_limit = 15
 
 rope_dist = 0;
 
@@ -32,7 +38,7 @@ drop_cd = 0;
 
 // Game score
 points = 0
-hp = 3
+hp = BASE_HP
 
 // Combo starts by getting S and A
 // Combo lasts while the S and A streak is active

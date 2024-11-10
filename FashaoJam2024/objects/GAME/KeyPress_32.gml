@@ -48,7 +48,6 @@ if (chance < 7) {
 	var block_choice = choose(
 		{ sprite: spr_block_expand, type: BlockType.EXPAND },
 		{ sprite: spr_block_narrow, type: BlockType.NARROW },
-		{ sprite: spr_block_bullet, type: BlockType.BULLET }
 	)
 	
 	current_block_sprite = block_choice.sprite
@@ -56,7 +55,8 @@ if (chance < 7) {
 } else if (chance >= 9.5) {
 	var block_choice = choose(
 		{ sprite: spr_block_heal, type: BlockType.HEAL },
-		{ sprite: spr_block_clock, type: BlockType.CLOCK },
+		{ sprite: spr_block_clock, type: BlockType.CLOCK },	
+		{ sprite: spr_block_bullet, type: BlockType.BULLET }
 	)
 	current_block_sprite = block_choice.sprite
 	current_block_type = block_choice.type

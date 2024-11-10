@@ -24,8 +24,8 @@ drop_cd = approach(drop_cd,0,1);
 if (current_block_instance != noone && !is_undefined(current_block_instance))
 and (variable_instance_exists(current_block_instance, "type") && current_block_instance.type == BlockType.BULLET) {
 	jerab_speed = 0.03
-} else if (jerab_speed != jerab_speed_default) {
-	jerab_speed = jerab_speed_default
+} else if (jerab_speed != JERAB_SPEED_DEFAULT) {
+	jerab_speed = JERAB_SPEED_DEFAULT
 }
 
 // Happens once when game is finished 
