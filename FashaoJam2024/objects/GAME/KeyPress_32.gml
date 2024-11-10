@@ -1,6 +1,6 @@
 if (drop_cd > 10) exit;
 
-//release block
+// Release block
 var cam = view_camera[0];
 
 var cam_w = camera_get_view_width(cam);
@@ -9,23 +9,41 @@ var cam_h = camera_get_view_height(cam);
 var cam_x = camera_get_view_x(cam);
 var cam_y = camera_get_view_y(cam);
 
-//where is the jerab joint
+// where is the jerab joint
 var joint_x = cam_x+cam_w/2;
 var joint_y = cam_y-500;
 
-//draw rope
+// draw rope
 draw_sprite_ext(spr_rope,0,joint_x,joint_y,rope_dist,1,jerab_dir,c_white,1);
 
-// Choose a new block type
+// FIX
+// This seems to happen for the NEXT block? Not for hte one that is being swung? 
+
+// Choose a new block type based on random chance
 var ran = random(10)
+show_debug_message(ran)
 var next_block_type
 // TODO: update chances
 if (ran < 7) {
 	current_block_sprite = spr_block_base
 	next_block_type = BlockType.BASE
-} else if (ran >= 7) {
-	current_block_sprite = spr_block_expand
-	next_block_type = BlockType.EXPAND
+} else if (ran < 9 && ran >= 7) {
+	// Randomly choose basic modifiers
+	var block_choice = choose(
+		{ sprite: spr_block_expand, type: BlockType.EXPAND },
+		{ sprite: spr_block_narrow, type: BlockType.NARROW },
+		{ sprite: spr_block_bullet, type: BlockType.BULLET }
+	)
+	
+	current_block_sprite = block_choice.sprite
+	next_block_type = block_choice.type
+} else if (ran >= 9.5) {
+	var block_choice = choose(
+		{ sprite: spr_block_heal, type: BlockType.HEAL },
+		//{ sprite: spr_block_Clock, type: BlockType.CLOCK },
+	)
+	current_block_sprite = block_choice.sprite
+	next_block_type = block_choice.type
 }
 
 // Create new block
