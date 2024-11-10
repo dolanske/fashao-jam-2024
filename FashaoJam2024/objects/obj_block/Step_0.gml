@@ -90,8 +90,10 @@ if (state == BlockState.FALLING) {
 			// If current and previous block have combo
 			if (is_combo_block()) {
 				GAME.combo_text += get_rating_str(placed_rating);
+				audio_sound_pitch(sfx_cheer_crowd, audio_sound_get_pitch(sfx_cheer_crowd) + 0.1)
 			} else if (string_length(GAME.combo_text) > 0) {
 				GAME.end_combo()
+				audio_sound_pitch(sfx_cheer_crowd, 1)
 			}
 			
 			// This will increment the game points. If you score S, it will add 5 points

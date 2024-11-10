@@ -54,6 +54,12 @@ if (chance < 7) {
 	
 	current_block_sprite = block_choice.sprite
 	current_block_type = block_choice.type
+	
+	if (block_choice.type == BlockType.CLOCK) {
+		call_later(15, time_source_units_frames, function() {
+			alarm[1] = CLOCK_TIMING
+		})
+	}
 } else if (chance >= 9) {
 	var block_choice = choose(
 		{ sprite: spr_block_heal, type: BlockType.HEAL },
@@ -61,10 +67,4 @@ if (chance < 7) {
 	)
 	current_block_sprite = block_choice.sprite
 	current_block_type = block_choice.type
-	
-	if (block_choice.type == BlockType.CLOCK) {
-			call_later(15, time_source_units_frames, function() {
-			alarm[1] = CLOCK_TIMING
-		})
-	}
 }

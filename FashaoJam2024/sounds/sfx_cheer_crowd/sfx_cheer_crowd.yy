@@ -20,6 +20,6 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"sfx_cheer_crowd.wav",
-  "type":0,
-  "volume":0.33,
+  "type":1,
+  "volume":0.52,
 }

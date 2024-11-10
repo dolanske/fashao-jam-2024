@@ -29,6 +29,7 @@ current_block_type = BlockType.BASE
 current_block_instance = noone
 
 obj_stem.swing = 0
+obj_stem.swing_smooth = 0
 
 state = GameState.RUNNING
 

@@ -53,6 +53,14 @@ if (state == GameState.INTRO) {
 		}
 		
 		draw_set_color(c_white)
+		
+		if (!audio_is_playing(sfx_cheer_crowd)) {
+			audio_play_sound(sfx_cheer_crowd, 1, true)
+		}
+	} else {
+		if (audio_is_playing(sfx_cheer_crowd)) {
+			audio_stop_sound(sfx_cheer_crowd)
+		}
 	}
 } else if (state == GameState.END) {
 	///////////////////////////////////////////////////
