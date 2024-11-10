@@ -1,3 +1,4 @@
-cam_yoffset = CAMERA.y-cam_y;
+cam_yoffset = point_distance(0,cam_y,0,CAMERA.y);
 
-y = lerp(y,ystart-cam_yoffset*(1/depth)*10,0.2);
+
+y = ystart-cam_yoffset*0.9;

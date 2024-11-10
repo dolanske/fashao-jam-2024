@@ -1,5 +1,5 @@
-cam_x = CAMERA.x;
-cam_y = CAMERA.y;
+cam_x = CAMERA.target_x;
+cam_y = CAMERA.target_y;
 
 cam_yoffset = 0;
 
