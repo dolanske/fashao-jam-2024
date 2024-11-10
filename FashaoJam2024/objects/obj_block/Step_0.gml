@@ -29,6 +29,8 @@ if (state == BlockState.FALLING) {
 			// the center and the nearest block center
 			var offset = abs(x - nearest.x)
 			
+			//var offset = point_distance(x,y,nearest.x+lengthdir_x(nearest.sprite_height,nearest.image_angle-180),nearest.y+lengthdir_y(nearest.sprite_height,nearest.image_angle-180));
+			
 			if (type == BlockType.NARROW) {
 				offset *= 0.625
 			}
