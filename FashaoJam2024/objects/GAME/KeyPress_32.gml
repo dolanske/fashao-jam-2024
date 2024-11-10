@@ -16,18 +16,26 @@ var joint_y = cam_y-500;
 // draw rope
 draw_sprite_ext(spr_rope,0,joint_x,joint_y,rope_dist,1,jerab_dir,c_white,1);
 
-// FIX
-// This seems to happen for the NEXT block? Not for hte one that is being swung? 
+// Create new block
+var block = instance_create_depth(joint_x+lengthdir_x(rope_dist+sprite_get_height(current_block_sprite),jerab_dir),joint_y+lengthdir_y(rope_dist+sprite_get_height(current_block_sprite),jerab_dir),0,obj_block);
+block.image_angle = jerab_dir;
+block.sprite_index = current_block_sprite;
+block.speed = block_spd / 2;
+block.direction = block_dir;
+block.type = current_block_type
 
-// Choose a new block type based on random chance
-var ran = random(10)
-show_debug_message(ran)
-var next_block_type
-// TODO: update chances
-if (ran < 7) {
+// Save instance so it can be referenced
+current_block_instance = block
+
+drop_cd = 50;
+
+// Select next block after the current one was dropped
+var chance = random(10)
+
+if (chance < 7) {
 	current_block_sprite = spr_block_base
-	next_block_type = BlockType.BASE
-} else if (ran < 9 && ran >= 7) {
+	current_block_type = BlockType.BASE
+} else if (chance < 9 && chance >= 7) {
 	// Randomly choose basic modifiers
 	var block_choice = choose(
 		{ sprite: spr_block_expand, type: BlockType.EXPAND },
@@ -36,25 +44,12 @@ if (ran < 7) {
 	)
 	
 	current_block_sprite = block_choice.sprite
-	next_block_type = block_choice.type
-} else if (ran >= 9.5) {
+	current_block_type = block_choice.type
+} else if (chance >= 9.5) {
 	var block_choice = choose(
 		{ sprite: spr_block_heal, type: BlockType.HEAL },
 		//{ sprite: spr_block_Clock, type: BlockType.CLOCK },
 	)
 	current_block_sprite = block_choice.sprite
-	next_block_type = block_choice.type
+	current_block_type = block_choice.type
 }
-
-// Create new block
-var block = instance_create_depth(joint_x+lengthdir_x(rope_dist+sprite_get_height(current_block_sprite),jerab_dir),joint_y+lengthdir_y(rope_dist+sprite_get_height(current_block_sprite),jerab_dir),0,obj_block);
-block.image_angle = jerab_dir;
-block.sprite_index = current_block_sprite;
-block.speed = block_spd / 2;
-block.direction = block_dir;
-block.type = next_block_type
-
-// Save instance so it can be referenced
-current_block_instance = block
-
-drop_cd = 50;

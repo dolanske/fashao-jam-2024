@@ -17,14 +17,9 @@ if (state == BlockState.FALLING) {
 		var nearest = instance_nearest(x-1000,y,obj_block);
 		x -= 1000;
 		if (nearest.top = 1) {
-			// FIX
-			// Pokud je predchozi blok EXPAND a je roztahly na max, tak je detekce posrana (proc dopice??). 
-			// Kdyz mas dosta A dostanes D kurva
-			// Prijde mi ze ma center nejak offsetly
-			
 			// Calculate score based on the distance between 
 			// the center and the nearest block center
-			var offset = round(abs((x + sprite_width / 2) - (nearest.x + nearest.sprite_width / 2)))
+			var offset = abs(x - nearest.x)
 			
 			// The max x offset can be width of the sprite - 1
 			var perc = 100 - (offset / sprite_width) * 100
