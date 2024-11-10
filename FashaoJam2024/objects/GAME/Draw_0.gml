@@ -46,10 +46,11 @@ if (state == GameState.INTRO) {
 	if (string_length(combo_text) > 0) {
 		// TODO: better position & hype 
 		draw_set_color(c_black)
+		combo_text = "ASASASASASASAS"
 		//draw_text(CAMERA.x - string_width(str) / 2, CAMERA.y + CAMERA.camera_h / 2 - 64, str)
 		for (var i = 1; i < string_length(combo_text)+1; i++){
 			var letter = string_char_at(combo_text,i);
-			draw_sprite_ext(asset_get_index("spr_" + string(letter) + "_tier"),0,start_x+40+i*64-floor(i/5)*5*64,start_y+96+floor(i/5)*48,random_range(0.4,0.6),random_range(0.4,0.6),random_range(-5,5),c_white,1);
+			draw_sprite_ext(asset_get_index("spr_" + string(letter) + "_tier"),0,start_x+40+(i-1)*64-floor((i-1)/5)*5*64,start_y+96+floor((i-1)/5)*48,random_range(0.4,0.6),random_range(0.4,0.6),random_range(-5,5),c_white,1);
 		}
 		
 		draw_set_color(c_white)
