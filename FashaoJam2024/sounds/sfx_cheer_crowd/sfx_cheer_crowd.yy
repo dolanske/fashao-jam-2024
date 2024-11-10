@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sfx_cheer_crowd.wav",
   "type":1,
-  "volume":0.52,
+  "volume":0.4,
 }
