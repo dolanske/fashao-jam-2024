@@ -33,10 +33,14 @@ hp = 3
 // Combo lasts while the S and A streak is active
 combo = 0
 
+// Ends the combo. Can be called even if combo wasn't happening
 function end_combo() {
 	points += combo
+	if (combo > 0) {
+		stats.total_combos += 1
+	}
+	
 	combo = 0
-	stats.total_combos += 1
 }
 
 // Statistics for end screen
