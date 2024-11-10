@@ -10,9 +10,6 @@ var cam_y = camera_get_view_y(cam);
 var joint_x = cam_x+cam_w/2;
 var joint_y = cam_y-500;
 
-// FIX:
-// BLok narrow je z nejakeho duvodu nepripojeny na lano
-
 //draw rope
 draw_sprite_ext(spr_rope,0,joint_x+lengthdir_x(rope_dist,jerab_dir),joint_y+lengthdir_y(rope_dist,jerab_dir),0.25,2,jerab_dir-270,c_white,1);
 

@@ -26,6 +26,10 @@ if (state == BlockState.FALLING) {
 			// the center and the nearest block center
 			var offset = abs(x - nearest.x)
 			
+			if (type == BlockType.NARROW) {
+				offset *= 0.625
+			}
+			
 			// The max x offset can be width of the sprite - 1
 			var perc = 100 - (offset / sprite_width) * 100
 			
@@ -61,8 +65,8 @@ if (state == BlockState.FALLING) {
 				return
 			}
 			
+			// Increase the height of the expandable block based on the score it's placed on
 			if (type == BlockType.EXPAND) {
-				// Increase the height of the expandable block based on the score it's placed on
 				image_xscale = max(((4 - placed_rating) / 4) * 2.5, 1)
 			}
 			
@@ -88,20 +92,18 @@ if (state == BlockState.FALLING) {
 			block_dir_offset = angle_difference(point_direction(obj_stem.x,obj_stem.y,x,y),obj_stem.dir);
 			block_dist = point_distance(obj_stem.x,obj_stem.y,x,y);
 			image_angle = obj_stem.dir-90;
-			//var iterations = round(speed*2);
+			
 			if (place_meeting(x,y,[obj_block,obj_stem])){
 				while (place_meeting(x,y,[obj_block,obj_stem])){
 					x += lengthdir_x(1,image_angle-180);
 					y += lengthdir_y(1,image_angle-180);
 					block_dist ++;
-					//iterations --;
 				}
 			}else{
 				while (!place_meeting(x,y,[obj_block,obj_stem])){
 					x += lengthdir_x(1,image_angle);
 					y += lengthdir_y(1,image_angle);
 					block_dist --;
-					//iterations --;
 				}
 			}
 			
@@ -141,8 +143,8 @@ if (state == BlockState.STOPPED) {
 }
 
 if (shake > 0){
-	if (instance_exists(obj_block)){
-		with(instance_nearest(x,y+80,obj_block)){
+	if (instance_exists(obj_block)) {
+		with(instance_nearest(x,y+80,obj_block)) {
 			shake = other.shake/2;
 		}
 	}

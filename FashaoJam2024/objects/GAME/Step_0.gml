@@ -5,10 +5,6 @@ if (jerab_a > pi * 2) {
 	jerab_a = jerab_a % (pi * 2)
 }
 
-if (jerab_a >= pi) {
-	// TODO: calculate combo shit
-}
-
 if (drop_cd > 0){
 	if (drop_cd < 40 and drop_cd > 25){
 		rope_dist = approach(rope_dist,0,20);
