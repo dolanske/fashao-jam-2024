@@ -9,9 +9,10 @@ enum GameState {
 // Constants
 
 CLOCK_TIMING = 20
-BASE_HP = 3
+BASE_HP = 0
 JERAB_SPEED_DEFAULT = 0.06
 GAME_SLOW_LIMIT = 15
+COMBO_SPLIT = 1
 
 //////////////////////////////////////////
 
@@ -51,6 +52,11 @@ function end_combo() {
 	
 	if (combo_len > 0) {
 		stats.total_combos += 1
+	
+		// Save longest combo to stats
+		if (combo_len > string_length(stats.longest_combo)) {
+			stats.longest_combo = combo_text
+		}
 	}
 	
 	combo_text = ""
@@ -65,10 +71,19 @@ stats = {
 	d_tier_blocks: 0,
 	total_blocks: 0,
 	total_misses: 0,
-	total_heals: 0,
 	total_combos: 0,
+	longest_combo: "",
 }
 
 alarm[0] = 1; // cloud spawner
 
 audio_play_sound(game_music, 1, true, 0.35)
+
+// Game end controllers
+ge_overlay_alpha = 0
+ge_text_offset = -10
+ge_text_opacity = 0
+
+// IF YOU ADD / CHANGE THESE, copy these two variables to the "Key Press - R" event
+ge_title = choose("Pillar completed", "Time's up!", "Completed", "Doneskis")
+ge_subtitle = choose("Astonishing, beautiful", "Aamazing feng shui", "Thank you builder", "Built by bulder fasho")

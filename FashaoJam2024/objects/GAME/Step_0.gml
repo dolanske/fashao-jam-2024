@@ -33,6 +33,8 @@ and (variable_instance_exists(current_block_instance, "type") && current_block_i
 // (player runs out of yang; thus creating large imbalance between ying & yang in his life)
 if (hp < 0 && state == GameState.RUNNING) {
 	state = GameState.END
+	audio_stop_sound(game_music)
+	audio_play_sound(game_over_music, 1, true, 0.35)
 	
 	// TODO: endagme screen shit
 }

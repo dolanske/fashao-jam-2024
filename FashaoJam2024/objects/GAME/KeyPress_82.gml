@@ -16,7 +16,6 @@ stats.c_tier_blocks = 0
 stats.d_tier_blocks = 0
 stats.total_blocks = 0
 stats.total_misses = 0
-stats.total_heals = 0
 stats.total_combos = 0
 
 hp = BASE_HP
@@ -30,3 +29,16 @@ current_block_type = BlockType.BASE
 current_block_instance = noone
 
 obj_stem.swing = 0
+
+state = GameState.RUNNING
+
+audio_stop_sound(game_music)
+audio_stop_sound(game_over_music)
+audio_play_sound(game_music, 1, true, 0.35)
+
+ge_title = choose("Pillar completed", "Time's up!", "Completed", "Doneskis")
+ge_subtitle = choose("Astonishing, beautiful", "Aamazing feng shui", "Thank you builder", "Built by bulder fasho")
+
+ge_overlay_alpha = 0
+ge_text_offset = -10
+ge_text_opacity = 0

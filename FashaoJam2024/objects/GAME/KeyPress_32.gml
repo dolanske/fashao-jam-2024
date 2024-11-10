@@ -1,4 +1,4 @@
-if (drop_cd > 10) exit;
+if (drop_cd > 10 || state != GameState.RUNNING) exit;
 
 // Release block
 var cam = view_camera[0];

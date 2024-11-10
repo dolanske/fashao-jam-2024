@@ -22,6 +22,9 @@ if (state == BlockState.FALLING) {
 				return
 			}
 			
+			// FIX
+			// Need to grade how block was placed on the stem
+			
 			// Calculate score based on the distance between 
 			// the center and the nearest block center
 			var offset = abs(x - nearest.x)
@@ -73,7 +76,6 @@ if (state == BlockState.FALLING) {
 			// Rare healing block
 			if (type == BlockType.HEAL) {
 				GAME.hp += 1
-				GAME.stats.total_heals += 1
 			}
 			
 			// If current and previous block have combo
