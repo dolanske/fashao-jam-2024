@@ -31,6 +31,8 @@ block_dist = 0;
 
 top = 1;
 
+is_clock_late = false
+
 // Store how far from the center we've placed the next block
 placed_rating = Rating.NONE
 placed_effect_active = false

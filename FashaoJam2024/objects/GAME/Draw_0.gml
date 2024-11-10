@@ -17,8 +17,6 @@ var joint_y = cam_y-500;
 draw_sprite_ext(spr_rope,0,joint_x+lengthdir_x(rope_dist,jerab_dir),joint_y+lengthdir_y(rope_dist,jerab_dir),0.25,2,jerab_dir-270,c_white,1);
 
 //draw block
-
-// TODO: clcock animation should apply here
 if (drop_cd <= 20)
 	draw_sprite_ext(current_block_sprite,sprite_animation_frame,joint_x+lengthdir_x(rope_dist+sprite_get_height(current_block_sprite),jerab_dir),joint_y+lengthdir_y(rope_dist+sprite_get_height(current_block_sprite),jerab_dir),1,1,jerab_dir,c_white,1);
 

@@ -17,6 +17,11 @@ if (state == BlockState.FALLING) {
 		var nearest = instance_nearest(x-1000,y,obj_block);
 		x -= 1000;
 		if (nearest.top = 1) {
+			if (is_clock_late) {
+				missed_block(speed_prev, nearest)
+				return
+			}
+			
 			// Calculate score based on the distance between 
 			// the center and the nearest block center
 			var offset = abs(x - nearest.x)
