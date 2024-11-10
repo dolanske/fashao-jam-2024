@@ -55,3 +55,5 @@ stats = {
 	total_heals: 0,
 	total_combos: 0,
 }
+
+alarm[0] = 1; //cloud spawner
