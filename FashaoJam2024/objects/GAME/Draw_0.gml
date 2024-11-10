@@ -47,9 +47,10 @@ if (state == GameState.INTRO) {
 		// TODO: better position & hype 
 		draw_set_color(c_black)
 		//draw_text(CAMERA.x - string_width(str) / 2, CAMERA.y + CAMERA.camera_h / 2 - 64, str)
-		for (var i = 0; i < string_length(combo_text); i++){
+		combo_text = "SBSBSBBSBSBSBS";
+		for (var i = 1; i < string_length(combo_text); i++){
 			var letter = string_char_at(combo_text,i);
-			draw_sprite_ext(asset_get_index("spr_" + string(letter) + "_tier"),0,cam_x+32+i*64,cam_y+32,random_range(0.9,1.1),random_range(0.9,1.1),random_range(-5,5),c_white,1);
+			draw_sprite_ext(asset_get_index("spr_" + string(letter) + "_tier"),0,start_x+32+i*64-floor(i/5)*5*64,start_y+96+floor(i/5)*48,random_range(0.4,0.6),random_range(0.4,0.6),random_range(-5,5),c_white,1);
 		}
 		
 		draw_set_color(c_white)
