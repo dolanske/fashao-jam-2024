@@ -1,1 +1,0 @@
-placed_effect_active = false

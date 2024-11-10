@@ -38,27 +38,27 @@ if (state == BlockState.FALLING) {
 			
 			// Save score to current block & world stats
 			// Determine swing of the tower as well
-			if (perc >= 97) {
+			if (perc >= 95) {
 				placed_rating = Rating.S
 				GAME.stats.s_tier_blocks += 1
 				
 				obj_stem.swing_smooth = max(0, obj_stem.swing - 0.3)
-			} else if (perc < 97 && perc >= 85) {
+			} else if (perc < 95 && perc >= 80) {
 				placed_rating = Rating.A
 				GAME.stats.a_tier_blocks += 1
 				
 				obj_stem.swing_smooth = max(0, obj_stem.swing - 0.15)
-			} else if (perc < 85 && perc >= 75) {
+			} else if (perc < 80 && perc >= 67) {
 				placed_rating = Rating.B
 				GAME.stats.b_tier_blocks += 1
 				
 				obj_stem.swing_smooth = min(1, obj_stem.swing + 0.025)
-			} else if (perc < 75 && perc >= 62) {
+			} else if (perc < 67 && perc >= 50) {
 				placed_rating = Rating.C
 				GAME.stats.c_tier_blocks += 1
 				
 				obj_stem.swing_smooth = min(1, obj_stem.swing + 0.05)
-			} else if (perc < 62 && perc >= 40) {
+			} else if (perc < 50 && perc >= 40) {
 				placed_rating = Rating.D
 				GAME.stats.d_tier_blocks += 1
 				
