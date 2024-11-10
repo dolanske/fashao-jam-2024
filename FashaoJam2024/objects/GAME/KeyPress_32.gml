@@ -24,6 +24,10 @@ block.speed = block_spd / 2;
 block.direction = block_dir;
 block.type = current_block_type
 
+if (current_block_type == BlockType.CLOCK) {
+	block.image_speed = 0.1
+}
+
 // Save instance so it can be referenced
 current_block_instance = block
 
@@ -48,8 +52,12 @@ if (chance < 7) {
 } else if (chance >= 9.5) {
 	var block_choice = choose(
 		{ sprite: spr_block_heal, type: BlockType.HEAL },
-		//{ sprite: spr_block_Clock, type: BlockType.CLOCK },
+		{ sprite: spr_block_clock, type: BlockType.CLOCK },
 	)
 	current_block_sprite = block_choice.sprite
 	current_block_type = block_choice.type
+	
+	if (block_choice.type == BlockType.CLOCK) {
+		alarm[1] = 30
+	}
 }

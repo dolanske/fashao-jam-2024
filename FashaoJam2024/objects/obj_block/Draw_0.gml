@@ -9,8 +9,3 @@ draw_sprite_ext(sprite_index,image_index,x+random_range(-shake,shake),y+random_r
 if (placed_effect_active) {
 	draw_text(x + 64, y - 32, placed_rating)
 }
-
-var center = y - sprite_height/ 2
-draw_set_color(c_black)
-draw_rectangle(x - 4, center -4, x +4, center  +4, false)
-draw_set_color(c_white)

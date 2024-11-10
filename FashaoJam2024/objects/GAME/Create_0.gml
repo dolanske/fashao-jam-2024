@@ -18,6 +18,12 @@ current_block_sprite = spr_block_base;
 current_block_type = BlockType.BASE
 current_block_instance = noone
 
+// If the current block type is clock, we must calculate its sprite here
+// TODO: draw proper sprite before block is dropped
+// set correct animation index once it's falling as well
+sprite_animation_frame = 0
+clock_is_late = false
+
 block_spd = 0; //speed of the block
 block_dir = 0; //direction of block
 
@@ -58,4 +64,4 @@ stats = {
 	total_combos: 0,
 }
 
-alarm[0] = 1; //cloud spawner
+alarm[0] = 1; // cloud spawner
