@@ -99,7 +99,7 @@ if (state == BlockState.FALLING) {
 					y += lengthdir_y(1,image_angle-180);
 					block_dist ++;
 				}
-			}else{
+			} else {
 				while (!place_meeting(x,y,[obj_block,obj_stem])){
 					x += lengthdir_x(1,image_angle);
 					y += lengthdir_y(1,image_angle);
@@ -121,6 +121,8 @@ if (state == BlockState.FALLING) {
 			final_yscale = image_yscale
 			image_xscale = image_xscale * 0.9;
 			image_yscale = image_yscale * 1.2;
+			
+			audio_play_sound(sfx_drop, 1, false, 0.1, 0, 0.6)
 			
 			//setting camera position
 			CAMERA.target_y = y - 180;
