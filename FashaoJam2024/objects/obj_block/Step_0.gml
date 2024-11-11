@@ -15,6 +15,12 @@ if (state == BlockState.FALLING) {
 		state = BlockState.STOPPED
 		x += 1000;
 		var nearest = instance_nearest(x-1000,y,obj_block);
+		
+		// If this passes, it means it's the very first block placed
+		if (id == nearest) {
+			nearest = instance_nearest(x-1000,y,obj_stem);
+		}
+		
 		x -= 1000;
 		if (nearest.top = 1) {
 			if (is_clock_late) {

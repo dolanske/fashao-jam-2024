@@ -10,7 +10,6 @@ Fashao feedback
 - fix bug where you can drop a tile on a lower tile than the top one
 	- top should be the tallest block, not the latest (Fix)
 - fix typos
-- remove first block having S combo (fix obj_stem collision?)
 - more china stuff on itch
 - remove arrow key up sthing
 - add a little background overlay / gradient behind the tower at the beginning of the game
