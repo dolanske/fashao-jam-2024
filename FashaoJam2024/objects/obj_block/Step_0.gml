@@ -13,6 +13,12 @@ if (state == BlockState.FALLING) {
 		gravity = 0
 		friction = 0
 		state = BlockState.STOPPED
+		
+		// TODO lepsi detekce
+		// Toto je sracka, musime udelat kolizi tak ze to vzdycky reliably selectne ten blok nahore.
+		// ANEBO to udelat tak, ze pokud se nejakym zpusobem tobe povede hodit ten zluty o par bloku nize, tak hrac bude
+		// moct polozit dalsi blok na either one of them (proste legal branching [toto by se mi mozna libilo vic tbh])
+		
 		x += 1000;
 		var nearest = instance_nearest(x-1000,y,obj_block);
 		
@@ -27,9 +33,7 @@ if (state == BlockState.FALLING) {
 				missed_block(speed_prev, nearest)
 				return
 			}
-			
-			// FIX
-			// Need to grade how block was placed on the stem
+
 			
 			// Calculate score based on the distance between 
 			// the center and the nearest block center
@@ -127,7 +131,8 @@ if (state == BlockState.FALLING) {
 					block_dist --;
 				}
 			}
-			repeat(5 - placed_rating){
+			repeat(5 - placed_rating) {
+				// TODO pridejme k efektum nejake cinske znaky
 				var vfx = instance_create_depth(x,y,0,obj_rating_vfx);
 				vfx.sprite_index = asset_get_index(string("spr_{0}_tier",get_rating_str(placed_rating)));
 				vfx.direction = image_angle+90*choose(-1,1)+random_range(-30,30);

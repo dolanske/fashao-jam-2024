@@ -30,7 +30,8 @@ if (state == GameState.INTRO) {
 
 	// Draw score
 	draw_set_font(font)
-	// TODO: offset by the money icon 
+	// TODO Pridej money ikonku nalevo od yenu
+	// A naanimuj ji
 	draw_text(start_x, start_y, "Yen")
 	var score_text_height = string_height("Yen")
 	draw_set_font(font_lg)
@@ -44,9 +45,10 @@ if (state == GameState.INTRO) {
 
 	// Draw combo
 	if (string_length(combo_text) > 0) {
-		// TODO: better position & hype 
+		// TODO Zkus jestli score pod bloky vypada lepe at je hra hratelnejsi
+		// TODO combo text kresli pozpatek, at je nejnovejsi blok always TOP LEFT
+		// TODO naanimuj to tak aby to slo poznat, ze ten nejnovejsi je latest combo (treba bude mit na chvilku vetsi x_scale a y_scale a prilety trosku zvrchu)
 		draw_set_color(c_black)
-		//draw_text(CAMERA.x - string_width(str) / 2, CAMERA.y + CAMERA.camera_h / 2 - 64, str)
 		for (var i = 1; i < string_length(combo_text)+1; i++){
 			var letter = string_char_at(combo_text,i);
 			draw_sprite_ext(asset_get_index("spr_" + string(letter) + "_tier"),0,start_x+40+(i-1)*64-floor((i-1)/5)*5*64,start_y+96+floor((i-1)/5)*48,random_range(0.4,0.6),random_range(0.4,0.6),random_range(-5,5),c_white,1);
@@ -66,6 +68,10 @@ if (state == GameState.INTRO) {
 } else if (state == GameState.END) {
 	///////////////////////////////////////////////////
 	// END SCREEN
+	
+	// TODO vsechny cisla by se mela lerpnout na finalni cislo z 0, at je tam hype
+	// Finalni score by melo nejak poskakovat at je tam extra efekt
+	// Pridat zvuk cinkani minci, zatim co se skore pricita
 	
 	ge_text_offset = lerp(ge_text_offset, start_x, 0.2)
 	ge_text_opacity = lerp(ge_text_opacity, 1, 0.2)
@@ -125,8 +131,24 @@ if (state == GameState.INTRO) {
 	
 	var y_start = obj_stem.y;
 	
+	// TODO: basically by se toto melo kreslit uprostred obrazovky
+	// a kdyz se prida jeden, hned se to zas vycentruje
+	
+	// Takze az by sel mimo obrazovku, poujde mimo nahoru i dolu zaroven
+	
+	// TODO: udelej to tak, aby se tam ta vez jakoby postavila (treba 10 bloku za veterinu +/-?)
+	
 	with(obj_block){
-		draw_sprite_ext(sprite_index,image_index,x/8+start_x+room_width/1.5+32,y/8-y_start+start_y+cam_h+180,image_xscale/8,image_yscale/8,image_angle,c_white,1);
+		draw_sprite_ext(
+			sprite_index,
+			image_index,
+			x / 8 + start_x + room_width / 1.5 + 32,
+			y / 8 - y_start + start_y + cam_h + 180,
+			image_xscale / 8,
+			image_yscale / 8,
+			image_angle,
+			c_white,
+			1
+		);
 	}
-	draw_text(start_x + 250, start_y + 316, "Your tower");
 }

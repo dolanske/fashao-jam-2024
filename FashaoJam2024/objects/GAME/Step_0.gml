@@ -19,9 +19,6 @@ drop_cd = approach(drop_cd,0,1);
 // Slow down spinning if current block is bullet type
 if (current_block_instance != noone && !is_undefined(current_block_instance))
 and (variable_instance_exists(current_block_instance, "type") && current_block_instance.type == BlockType.BULLET) {
-	// TODO: idea
-	// CO kdyz pri bullet time si kamera malicko zoomne?
-	
 	jerab_speed = 0.03
 	with(CAMERA){
 		camera_w = lerp(camera_w,camera_w_default-65,0.2)

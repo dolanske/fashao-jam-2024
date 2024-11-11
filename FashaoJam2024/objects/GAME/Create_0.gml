@@ -1,6 +1,7 @@
 randomize()
 
 enum GameState {
+	// TODO Implement intro
 	INTRO,
 	RUNNING,
 	END,
