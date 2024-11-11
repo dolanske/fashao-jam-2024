@@ -56,8 +56,8 @@ if (chance < 7) {
 	current_block_type = block_choice.type
 	
 	if (block_choice.type == BlockType.CLOCK) {
-		call_later(15, time_source_units_frames, function() {
-			alarm[1] = CLOCK_TIMING
+		call_later(20, time_source_units_frames, function() {
+			alarm[1] = CLOCK_TIMING * (jerab_speed / JERAB_SPEED_DEFAULT)
 		})
 	}
 } else if (chance >= 9) {

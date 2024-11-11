@@ -1,1 +1,0 @@
-CAMERA.target_y -= 32;

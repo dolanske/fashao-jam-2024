@@ -84,6 +84,14 @@ ge_overlay_alpha = 0
 ge_text_offset = -10
 ge_text_opacity = 0
 
-// IF YOU ADD / CHANGE THESE, copy these two variables to the "Key Press - R" event
-ge_title = choose("Pillar completed", "Time's up!", "Completed", "Doneskis", "Mirakulous!!", "Mao is happy", "BIG NEWS")
-ge_subtitle = choose("Astonishing, beautiful", "Aamazing feng shui", "Thank you builder", "Built by bulder fasho", "Awarded 50 potatoes", "Chinese New York")
+// Random end-screen text selection
+function choose_title() {
+	return choose("Pillar completed", "Time's up!", "Completed", "Doneskis", "Miraculous!!", "Mao is happy", "BIG NEWS", "Minecraft???", "Peking celebrates", "Yin yan")
+}
+
+function choose_subtitle() {
+	return choose("Astonishing, beautiful", "Amazing feng shui", "Thank you builder", "Built by builder Fashao", "Awarded 50 potatoes", "Chinese New York", "+ million social credits", "5 year plan on track", "Feng shui restored")
+}	
+
+ge_title = choose_title()
+ge_subtitle = choose_subtitle()
