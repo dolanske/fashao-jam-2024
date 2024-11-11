@@ -90,7 +90,7 @@ if (state == BlockState.FALLING) {
 			}
 			
 			// If current and previous block have combo
-			if (is_combo_block()) {
+			if (placed_rating == Rating.S || placed_rating == Rating.A) {
 				GAME.combo_text += get_rating_str(placed_rating);
 				audio_sound_pitch(sfx_cheer_crowd, audio_sound_get_pitch(sfx_cheer_crowd) + 0.05)
 			} else if (string_length(GAME.combo_text) > 0) {

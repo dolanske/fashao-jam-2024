@@ -60,6 +60,7 @@ if (state == GameState.INTRO) {
 	} else {
 		if (audio_is_playing(sfx_cheer_crowd)) {
 			audio_stop_sound(sfx_cheer_crowd)
+			audio_sound_pitch(sfx_cheer_crowd, 1)
 		}
 	}
 } else if (state == GameState.END) {

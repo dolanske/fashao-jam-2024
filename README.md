@@ -1,6 +1,5 @@
 Fashao feedback
 
-- pitch of crowd stays between combos
 - combo
 	- reverse list, newest at top
 	- render behind blocks

@@ -61,7 +61,3 @@ function missed_block(speed_prev, nearest = undefined) {
 	
 	instance_destroy();
 }
-
-function is_combo_block() {
-	return placed_rating == Rating.S || placed_rating == Rating.A
-}
