@@ -9,14 +9,7 @@ CAMERA.target_y = room_height / 2
 CAMERA.shake = 0
 
 // Reset stats
-stats.s_tier_blocks = 0
-stats.a_tier_blocks = 0
-stats.b_tier_blocks = 0
-stats.c_tier_blocks = 0
-stats.d_tier_blocks = 0
-stats.total_blocks = 0
-stats.total_misses = 0
-stats.total_combos = 0
+stats = create_empty_stats()
 
 hp = BASE_HP
 points = 0

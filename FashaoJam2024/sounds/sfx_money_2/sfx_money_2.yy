@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_money_2",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.401792,
+  "name":"sfx_money_2",
+  "parent":{
+    "name":"SFX",
+    "path":"folders/Music/SFX.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_money_2.wav",
+  "type":1,
+  "volume":1.0,
+}

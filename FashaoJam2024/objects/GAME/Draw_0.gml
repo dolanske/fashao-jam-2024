@@ -69,7 +69,7 @@ if (state == GameState.INTRO) {
 	///////////////////////////////////////////////////
 	// END SCREEN
 	
-	// TODO vsechny cisla by se mela lerpnout na finalni cislo z 0, at je tam hype
+	// TODO
 	// Finalni score by melo nejak poskakovat at je tam extra efekt
 	// Pridat zvuk cinkani minci, zatim co se skore pricita
 	
@@ -92,42 +92,71 @@ if (state == GameState.INTRO) {
 	draw_set_alpha(ge_text_opacity)
 	
 	// Draw stats
+	
+	// Play money sound
+	if (ge_points != points) {
+		audio_play_sound(
+			choose(sfx_money_1,sfx_money_2, sfx_money_3),
+			1, false, random_range(0.01, 0.8)
+		)
+	}
+	
+	ge_points = lerp_stats(ge_points, points)
 	draw_text(ge_text_offset, start_y + 80, "Yen")
-	draw_text(ge_text_offset + 156, start_y + 80, points)
+	draw_text(ge_text_offset + 156, start_y + 80, round(ge_points))
 	
+	ge_stats.total_blocks = lerp_stats(ge_stats.total_blocks, stats.total_blocks)
 	draw_text(ge_text_offset, start_y + 100, "Placed blocks")
-	draw_text(ge_text_offset + 156, start_y + 100, stats.total_blocks)
+	draw_text(ge_text_offset + 156, start_y + 100, round(ge_stats.total_blocks))
 	
+	ge_stats.total_combos = lerp_stats(ge_stats.total_combos, stats.total_combos)
 	draw_text(ge_text_offset, start_y + 120, "Combos")
-	draw_text(ge_text_offset + 156, start_y + 120,stats.total_combos)
+	draw_text(ge_text_offset + 156, start_y + 120,round(ge_stats.total_combos))
+	
+	// Show the longest combo text increasing
+	if (string_length(ge_stats.longest_combo) != string_length(stats.longest_combo)) {
+		ge_frames++
+	}
+	
+	// Only increase every 8 frames. Fuck you I dont want alarm for this
+	if (ge_frames % 8 == 0) {
+		// TODO muzem udelat ze pokazde kdyz se to incrementne, tak ten text poskoci?
+		ge_stats.longest_combo += string_char_at(stats.longest_combo, string_length(ge_stats.longest_combo))
+	}
 	
 	draw_text(ge_text_offset, start_y + 140, "Longest combo")
-	draw_text(ge_text_offset + 156, start_y + 140, stats.longest_combo)
+	draw_text(ge_text_offset + 156, start_y + 140, ge_stats.longest_combo)
 	
 	draw_rectangle(ge_text_offset, start_y + 166, ge_text_offset + 64, start_y + 168, false)
 	
+	ge_stats.s_tier_blocks = lerp_stats(ge_stats.s_tier_blocks, stats.s_tier_blocks)
 	draw_text(ge_text_offset, start_y + 190, "S tier")
-	draw_text(ge_text_offset + 156, start_y + 190,stats.s_tier_blocks)
+	draw_text(ge_text_offset + 156, start_y + 190,round(ge_stats.s_tier_blocks))
 	
+	ge_stats.a_tier_blocks = lerp_stats(ge_stats.a_tier_blocks, stats.a_tier_blocks)
 	draw_set_alpha(0.9)
 	draw_text(ge_text_offset, start_y + 210, "A tier")
-	draw_text(ge_text_offset + 156, start_y + 210, stats.a_tier_blocks)
+	draw_text(ge_text_offset + 156, start_y + 210, round(ge_stats.a_tier_blocks))
 	
+	ge_stats.b_tier_blocks = lerp_stats(ge_stats.b_tier_blocks, stats.b_tier_blocks)
 	draw_set_alpha(0.8)
 	draw_text(ge_text_offset, start_y + 230, "B tier")
-	draw_text(ge_text_offset + 156, start_y + 230, stats.b_tier_blocks)
+	draw_text(ge_text_offset + 156, start_y + 230, round(ge_stats.b_tier_blocks))
 	
+	ge_stats.c_tier_blocks = lerp_stats(ge_stats.c_tier_blocks, stats.c_tier_blocks)
 	draw_set_alpha(0.7)
 	draw_text(ge_text_offset, start_y + 250, "C tier")
-	draw_text(ge_text_offset + 156, start_y + 250, stats.c_tier_blocks)
+	draw_text(ge_text_offset + 156, start_y + 250, round(ge_stats.c_tier_blocks))
 	
+	ge_stats.d_tier_blocks = lerp_stats(ge_stats.d_tier_blocks, stats.d_tier_blocks)
 	draw_set_alpha(0.6)
 	draw_text(ge_text_offset, start_y + 270, "D tier")
-	draw_text(ge_text_offset + 156, start_y + 270, stats.d_tier_blocks)
+	draw_text(ge_text_offset + 156, start_y + 270, round(ge_stats.d_tier_blocks))
 	
+	ge_stats.total_misses = lerp_stats(ge_stats.total_misses, stats.total_misses)
 	draw_set_alpha(1)
 	draw_text(ge_text_offset, start_y + 290, "Misses")
-	draw_text(ge_text_offset + 156, start_y + 290, stats.total_misses)
+	draw_text(ge_text_offset + 156, start_y + 290, round(ge_stats.total_misses))
 	
 	var y_start = obj_stem.y;
 	

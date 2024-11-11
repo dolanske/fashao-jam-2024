@@ -14,6 +14,7 @@ BASE_HP = 3
 JERAB_SPEED_DEFAULT = 0.06
 GAME_SLOW_LIMIT = 15
 COMBO_SPLIT = 1
+GE_STATS_INCREMENT = 0.1
 
 //////////////////////////////////////////
 
@@ -64,26 +65,40 @@ function end_combo() {
 }
 
 // Statistics for end screen
-stats = {
-	s_tier_blocks: 0,
-	a_tier_blocks: 0,
-	b_tier_blocks: 0,
-	c_tier_blocks: 0,
-	d_tier_blocks: 0,
-	total_blocks: 0,
-	total_misses: 0,
-	total_combos: 0,
-	longest_combo: "",
+function create_empty_stats() {
+	// Create empty stats object
+	return {
+		s_tier_blocks: 0,
+		a_tier_blocks: 0,
+		b_tier_blocks: 0,
+		c_tier_blocks: 0,
+		d_tier_blocks: 0,
+		total_blocks: 0,
+		total_misses: 0,
+		total_combos: 0,
+		longest_combo: "",
+	}
 }
+
+stats = create_empty_stats()
 
 alarm[0] = 1; // cloud spawner
 
 audio_play_sound(game_music, 1, true, 0.35)
 
+////////////////////////////////////////////////////////
+
 // Game end controllers
 ge_overlay_alpha = 0
 ge_text_offset = -10
 ge_text_opacity = 0
+ge_stats = create_empty_stats()
+ge_points = 0
+ge_frames = 0
+
+function lerp_stats(field, real_field) {
+	return lerp(field, real_field, GE_STATS_INCREMENT)
+}
 
 // Random end-screen text selection
 function choose_title() {
