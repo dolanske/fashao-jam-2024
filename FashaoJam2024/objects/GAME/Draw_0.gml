@@ -35,7 +35,7 @@ if (state == GameState.INTRO) {
 	draw_text(start_x, start_y, "Yen")
 	var score_text_height = string_height("Yen")
 	draw_set_font(font_lg)
-	draw_text(start_x, start_y + score_text_height, points)
+	draw_text(start_x, start_y + score_text_height+points_y, points)
 
 	// Draw health
 	draw_set_font(font)

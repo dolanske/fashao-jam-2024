@@ -41,6 +41,7 @@ drop_cd = 0;
 
 // Game score
 points = 0
+points_y = 0;
 hp = BASE_HP
 
 // Combo starts by getting S and A
@@ -50,7 +51,7 @@ combo_text = ""
 // Ends the combo. Can be called even if combo wasn't happening
 function end_combo() {
 	var combo_len = string_length(combo_text)
-	points += combo_len
+	//points += combo_len
 	
 	if (combo_len > 0) {
 		stats.total_combos += 1
@@ -60,7 +61,14 @@ function end_combo() {
 			stats.longest_combo = combo_text
 		}
 	}
-	
+	//TODO create moeny
+	for (var i = 1; i < string_length(combo_text)+1; i++){
+		var start_x = CAMERA.x - CAMERA.camera_w / 2 + 8
+		var start_y = CAMERA.y - CAMERA.camera_h / 2 + 8
+		var letter = string_char_at(combo_text,i);
+		var c = instance_create_depth(start_x+40+(i-1)*64-floor((i-1)/5)*5*64,start_y+96+floor((i-1)/5)*48,-2,obj_combo_vfx);
+		c.sprite_index = asset_get_index("spr_" + string(letter) + "_tier");
+	}
 	combo_text = ""
 }
 

@@ -42,7 +42,7 @@ if (state == BlockState.FALLING) {
 			//var offset = point_distance(x,y,nearest.x+lengthdir_x(nearest.sprite_height,nearest.image_angle-180),nearest.y+lengthdir_y(nearest.sprite_height,nearest.image_angle-180));
 			
 			if (type == BlockType.NARROW) {
-				offset *= 0.625
+				offset *= 1.25;
 			}
 			
 			// The max x offset can be width of the sprite - 1
@@ -110,7 +110,14 @@ if (state == BlockState.FALLING) {
 			
 			// This will increment the game points. If you score S, it will add 5 points
 			// Because enums start at 0 and move up, D = 4
-			GAME.points += 5 - placed_rating
+			//GAME.points += 5 - placed_rating
+			//TODO create money
+			repeat(5-placed_rating){
+				var yen = instance_create_depth(x,y,-1,obj_yen);
+				yen.direction = 90+random_range(-70,70);
+				yen.speed = random_range(2,9);
+				yen.vspeed -= 2;
+			}
 			GAME.stats.total_blocks += 1
 			
 			//calculating position
