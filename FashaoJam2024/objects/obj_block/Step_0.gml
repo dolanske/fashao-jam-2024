@@ -14,11 +14,6 @@ if (state == BlockState.FALLING) {
 		friction = 0
 		state = BlockState.STOPPED
 		
-		// TODO lepsi detekce
-		// Toto je sracka, musime udelat kolizi tak ze to vzdycky reliably selectne ten blok nahore.
-		// ANEBO to udelat tak, ze pokud se nejakym zpusobem tobe povede hodit ten zluty o par bloku nize, tak hrac bude
-		// moct polozit dalsi blok na either one of them (proste legal branching [toto by se mi mozna libilo vic tbh])
-		
 		x += 1000;
 		var nearest = instance_nearest(x-1000,y,obj_block);
 		
@@ -111,7 +106,6 @@ if (state == BlockState.FALLING) {
 			// This will increment the game points. If you score S, it will add 5 points
 			// Because enums start at 0 and move up, D = 4
 			//GAME.points += 5 - placed_rating
-			//TODO create money
 			repeat(5-placed_rating){
 				var yen = instance_create_depth(x,y,-1,obj_yen);
 				yen.direction = 90+random_range(-70,70);

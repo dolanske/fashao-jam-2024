@@ -45,7 +45,6 @@ if (state == GameState.INTRO) {
 
 	// Draw combo
 	if (string_length(combo_text) > 0) {
-		// TODO Zkus jestli score pod bloky vypada lepe at je hra hratelnejsi
 		// TODO combo text kresli pozpatek, at je nejnovejsi blok always TOP LEFT
 		// TODO naanimuj to tak aby to slo poznat, ze ten nejnovejsi je latest combo (treba bude mit na chvilku vetsi x_scale a y_scale a prilety trosku zvrchu)
 		draw_set_color(c_black)
