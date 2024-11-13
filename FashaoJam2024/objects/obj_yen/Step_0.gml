@@ -16,7 +16,7 @@ var cam = view_camera[0];
 var cam_h = camera_get_view_height(cam);
 var cam_y = camera_get_view_y(cam);
 
-if (y > cam_y+cam_h){
+if (y > cam_y+cam_h-48){
 	GAME.points ++;
 	GAME.points_y += 8;
 	instance_destroy();

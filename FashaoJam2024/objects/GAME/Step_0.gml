@@ -18,6 +18,9 @@ drop_cd = approach(drop_cd,0,1);
 
 points_y = approach(points_y,0,2);
 
+points_a += 0.2;
+points_scale = sin(points_a);
+
 // Slow down spinning if current block is bullet type
 if (current_block_instance != noone && !is_undefined(current_block_instance))
 and (variable_instance_exists(current_block_instance, "type") && current_block_instance.type == BlockType.BULLET) {

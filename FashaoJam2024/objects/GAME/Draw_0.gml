@@ -32,16 +32,39 @@ if (state == GameState.INTRO) {
 	draw_set_font(font)
 	// TODO Pridej money ikonku nalevo od yenu
 	// A naanimuj ji
-	draw_text(start_x, start_y, "Yen")
-	var score_text_height = string_height("Yen")
-	draw_set_font(font_lg)
-	draw_text(start_x, start_y + score_text_height+points_y, points)
+	//draw_text(start_x, start_y, "Yen")
+	//var score_text_height = string_height("Yen")
+
+	//yen in the middle
+	//rectangle
+	draw_set_color(c_black);
+	draw_rectangle(cam_x,cam_y+cam_h-48,cam_x+cam_w,cam_y+cam_h,false);
+	draw_set_color(c_white);
+	//points
+	draw_set_font(font_lg);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
+	var points_xx = cam_x+cam_w/2;
+	var points_yy = cam_y+cam_h-24;
+	draw_set_color(make_color_rgb(255,252,197));
+	draw_text(points_xx,points_yy+points_y,points);
+	draw_set_color(c_white);
+	//yen
+	draw_sprite_ext(spr_yen,0,points_xx-string_width(points)/2-24+random_range(-points_y/2,points_y/2),points_yy+random_range(-points_y/2,points_y/2),points_scale*0.6,1*0.6,0,c_white,1);
+	draw_sprite_ext(spr_yen,0,points_xx+string_width(points)/2+24+random_range(-points_y/2,points_y/2),points_yy+random_range(-points_y/2,points_y/2),points_scale*0.6,1*0.6,0,c_white,1);
+	
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+	
+	
+	//draw_set_font(font_lg);
+	//draw_text(start_x, start_y + score_text_height+points_y, points)
 
 	// Draw health
-	draw_set_font(font)
-	draw_text(start_x + CAMERA.camera_w - string_width("Yang") - 16, start_y, "Yang")
-	draw_set_font(font_lg)
-	draw_text(start_x + CAMERA.camera_w - string_width(hp) - 16, start_y + score_text_height, hp)
+	//draw_set_font(font)
+	//draw_text(start_x + CAMERA.camera_w - string_width("Yang") - 16, start_y, "Yang")
+	//draw_set_font(font_lg)
+	//draw_text(start_x + CAMERA.camera_w - string_width(hp) - 16, start_y + score_text_height, hp)
 
 	// Draw combo
 	if (string_length(combo_text) > 0) {

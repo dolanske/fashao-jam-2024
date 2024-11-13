@@ -1,5 +1,7 @@
 randomize()
 
+depth = -3;
+
 enum GameState {
 	// TODO Implement intro
 	INTRO,
@@ -42,6 +44,8 @@ drop_cd = 0;
 // Game score
 points = 0
 points_y = 0;
+points_a = 0;
+points_scale = 0;
 hp = BASE_HP
 
 // Combo starts by getting S and A

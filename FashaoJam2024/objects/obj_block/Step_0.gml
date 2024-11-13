@@ -29,15 +29,39 @@ if (state == BlockState.FALLING) {
 				return
 			}
 
+			//calculating position
+			block_dir_offset = angle_difference(point_direction(obj_stem.x,obj_stem.y,x,y),obj_stem.dir);
+			block_dist = point_distance(obj_stem.x,obj_stem.y,x,y);
+			image_angle = obj_stem.dir-90;
+			
+			if (place_meeting(x,y,[obj_block,obj_stem])){
+				while (place_meeting(x,y,[obj_block,obj_stem])){
+					x += lengthdir_x(1,image_angle-180);
+					y += lengthdir_y(1,image_angle-180);
+					block_dist ++;
+				}
+			} else {
+				while (!place_meeting(x,y,[obj_block,obj_stem])){
+					x += lengthdir_x(1,image_angle);
+					y += lengthdir_y(1,image_angle);
+					block_dist --;
+				}
+			}
 			
 			// Calculate score based on the distance between 
 			// the center and the nearest block center
-			var offset = abs(x - nearest.x)
+			var offset = abs(x - nearest.x);
+			//var offset = point_distance(x,y,nearest.x+lengthdir_x(nearest.image_yscale,nearest.image_angle),nearest.y+lengthdir_y(nearest.image_yscale,nearest.image_angle))
+			//var test = instance_create_depth(x,y,-3,obj_test);
+			//test.x1 = x;
+			//test.y1 = y;
+			//test.y2 = nearest.y+lengthdir_y(nearest.sprite_width*nearest.image_xscale,nearest.image_angle-180)
+			//test.x2 = nearest.x+lengthdir_x(nearest.sprite_width*nearest.image_xscale,nearest.image_angle-180)
 			
 			//var offset = point_distance(x,y,nearest.x+lengthdir_x(nearest.sprite_height,nearest.image_angle-180),nearest.y+lengthdir_y(nearest.sprite_height,nearest.image_angle-180));
 			
 			if (type == BlockType.NARROW) {
-				offset *= 1.25;
+				offset *= 1.5;
 			}
 			
 			// The max x offset can be width of the sprite - 1
@@ -114,24 +138,6 @@ if (state == BlockState.FALLING) {
 			}
 			GAME.stats.total_blocks += 1
 			
-			//calculating position
-			block_dir_offset = angle_difference(point_direction(obj_stem.x,obj_stem.y,x,y),obj_stem.dir);
-			block_dist = point_distance(obj_stem.x,obj_stem.y,x,y);
-			image_angle = obj_stem.dir-90;
-			
-			if (place_meeting(x,y,[obj_block,obj_stem])){
-				while (place_meeting(x,y,[obj_block,obj_stem])){
-					x += lengthdir_x(1,image_angle-180);
-					y += lengthdir_y(1,image_angle-180);
-					block_dist ++;
-				}
-			} else {
-				while (!place_meeting(x,y,[obj_block,obj_stem])){
-					x += lengthdir_x(1,image_angle);
-					y += lengthdir_y(1,image_angle);
-					block_dist --;
-				}
-			}
 			repeat(5 - placed_rating) {
 				// TODO pridejme k efektum nejake cinske znaky
 				var vfx = instance_create_depth(x,y,0,obj_rating_vfx);

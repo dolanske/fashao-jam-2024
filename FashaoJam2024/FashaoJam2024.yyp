@@ -54,6 +54,7 @@
     {"id":{"name":"obj_sky","path":"objects/obj_sky/obj_sky.yy",},},
     {"id":{"name":"obj_speechbubble","path":"objects/obj_speechbubble/obj_speechbubble.yy",},},
     {"id":{"name":"obj_stem","path":"objects/obj_stem/obj_stem.yy",},},
+    {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},},
     {"id":{"name":"obj_village","path":"objects/obj_village/obj_village.yy",},},
     {"id":{"name":"obj_yen_gone","path":"objects/obj_yen_gone/obj_yen_gone.yy",},},
     {"id":{"name":"obj_yen","path":"objects/obj_yen/obj_yen.yy",},},
