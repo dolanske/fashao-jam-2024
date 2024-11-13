@@ -1,14 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cloud",
+  "%Name":"obj_space",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_cloud",
+  "name":"obj_space",
   "overriddenProperties":[],
   "parent":{
     "name":"BG",
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_clouds",
-    "path":"sprites/spr_clouds/spr_clouds.yy",
+    "name":"spr_space",
+    "path":"sprites/spr_space/spr_space.yy",
   },
   "spriteMaskId":null,
   "visible":true,

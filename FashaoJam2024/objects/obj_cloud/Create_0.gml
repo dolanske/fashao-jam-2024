@@ -5,6 +5,8 @@ cam_y = CAMERA.target_y;
 cam_yoffset = 0;
 cam_yoffset_smooth = 0;
 
+image_a = 1;
+
 depth = choose(7,8,9);
 
 hspeed = sign(cam_x-x)/depth*10;

@@ -5,6 +5,10 @@ with (obj_block) {
 	instance_destroy()
 }
 
+with(obj_space){
+	y = ystart;
+}
+
 CAMERA.target_y = room_height / 2
 CAMERA.shake = 0
 

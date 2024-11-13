@@ -95,6 +95,7 @@ function create_empty_stats() {
 stats = create_empty_stats()
 
 alarm[0] = 1; // cloud spawner
+alarm[2] = 180; //fall star spawner
 
 audio_play_sound(game_music, 1, true, 0.35)
 
