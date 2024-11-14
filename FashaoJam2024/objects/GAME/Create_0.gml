@@ -65,7 +65,7 @@ function end_combo() {
 			stats.longest_combo = combo_text
 		}
 	}
-	//TODO create moeny
+	
 	for (var i = 1; i < string_length(combo_text)+1; i++){
 		var start_x = CAMERA.x - CAMERA.camera_w / 2 + 8
 		var start_y = CAMERA.y - CAMERA.camera_h / 2 + 8

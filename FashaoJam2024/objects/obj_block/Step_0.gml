@@ -24,6 +24,14 @@ if (state == BlockState.FALLING) {
 		
 		x -= 1000;
 		if (nearest.top = 1) {
+			if (type == BlockType.BOMB) {
+				//  TODOTrigger explosion
+				missed_block(speed_prev, nearest)
+				GAME.hp -= 1
+				return
+			}
+			
+			// TODO: add bomb explosion
 			if (is_clock_late) {
 				missed_block(speed_prev, nearest)
 				return
@@ -73,12 +81,12 @@ if (state == BlockState.FALLING) {
 				placed_rating = Rating.S
 				GAME.stats.s_tier_blocks += 1
 				
-				obj_stem.swing = max(0, obj_stem.swing - 0.15)
+				obj_stem.swing = max(0, obj_stem.swing - 0.2)
 			} else if (perc < 96 && perc >= 80) {
 				placed_rating = Rating.A
 				GAME.stats.a_tier_blocks += 1
 				
-				obj_stem.swing = max(0, obj_stem.swing - 0.05)
+				obj_stem.swing = max(0, obj_stem.swing - 0.06)
 			} else if (perc < 80 && perc >= 67) {
 				placed_rating = Rating.B
 				GAME.stats.b_tier_blocks += 1
@@ -88,12 +96,12 @@ if (state == BlockState.FALLING) {
 				placed_rating = Rating.C
 				GAME.stats.c_tier_blocks += 1
 				
-				obj_stem.swing = min(1, obj_stem.swing + 0.175)
+				obj_stem.swing = min(1, obj_stem.swing + 0.16)
 			} else if (perc < 50 && perc >= 40) {
 				placed_rating = Rating.D
 				GAME.stats.d_tier_blocks += 1
 				
-				obj_stem.swing = min(1, obj_stem.swing + 0.25)
+				obj_stem.swing = min(1, obj_stem.swing + 0.22)
 			} else if (perc < 40) {
 				missed_block(speed_prev, nearest)
 				return
@@ -130,7 +138,7 @@ if (state == BlockState.FALLING) {
 			// This will increment the game points. If you score S, it will add 5 points
 			// Because enums start at 0 and move up, D = 4
 			//GAME.points += 5 - placed_rating
-			repeat(5-placed_rating){
+			repeat(5 - placed_rating){
 				var yen = instance_create_depth(x,y,-1,obj_yen);
 				yen.direction = 90+random_range(-70,70);
 				yen.speed = random_range(2,9);

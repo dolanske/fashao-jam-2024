@@ -69,17 +69,19 @@ if (chance < 7) {
 	
 	current_block_sprite = block_choice.sprite
 	current_block_type = block_choice.type
-	
-	if (block_choice.type == BlockType.CLOCK) {
-		call_later(20, time_source_units_frames, function() {
-			alarm[1] = CLOCK_TIMING * (JERAB_SPEED_DEFAULT / jerab_speed)
-		})
-	}
 } else if (chance >= 9) {
 	var block_choice = choose(
 		{ sprite: spr_block_heal, type: BlockType.HEAL },
-		{ sprite: spr_block_bullet, type: BlockType.BULLET }
+		{ sprite: spr_block_bomb, type: BlockType.BULLET },
+		{ sprite: spr_block_bomb, type: BlockType.BULLET }
 	)
 	current_block_sprite = block_choice.sprite
 	current_block_type = block_choice.type
+}
+
+// After next block is chosen, start timer for time-related blocks
+if (current_block_type == BlockType.CLOCK || current_block_type == BlockType.BOMB) {
+	call_later(20, time_source_units_frames, function() {
+		alarm[1] = CLOCK_TIMING * (JERAB_SPEED_DEFAULT / jerab_speed)
+	})
 }

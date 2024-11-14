@@ -4,7 +4,8 @@ enum BlockType {
 	HEAL,
 	BULLET,
 	NARROW,
-	CLOCK
+	CLOCK,
+	BOMB
 }
 
 enum BlockState {

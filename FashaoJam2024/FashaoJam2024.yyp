@@ -88,6 +88,8 @@
     {"id":{"name":"spr_B_tier","path":"sprites/spr_B_tier/spr_B_tier.yy",},},
     {"id":{"name":"spr_block_base_falling","path":"sprites/spr_block_base_falling/spr_block_base_falling.yy",},},
     {"id":{"name":"spr_block_base","path":"sprites/spr_block_base/spr_block_base.yy",},},
+    {"id":{"name":"spr_block_bomb_falling","path":"sprites/spr_block_bomb_falling/spr_block_bomb_falling.yy",},},
+    {"id":{"name":"spr_block_bomb","path":"sprites/spr_block_bomb/spr_block_bomb.yy",},},
     {"id":{"name":"spr_block_bullet_falling","path":"sprites/spr_block_bullet_falling/spr_block_bullet_falling.yy",},},
     {"id":{"name":"spr_block_bullet","path":"sprites/spr_block_bullet/spr_block_bullet.yy",},},
     {"id":{"name":"spr_block_clock_falling","path":"sprites/spr_block_clock_falling/spr_block_clock_falling.yy",},},

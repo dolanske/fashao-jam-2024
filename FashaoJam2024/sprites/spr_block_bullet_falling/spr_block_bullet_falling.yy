@@ -23,7 +23,7 @@
   ],
   "name":"spr_block_bullet_falling",
   "nineSlice":null,
-  "origin":5,
+  "origin":4,
   "parent":{
     "name":"BLOCKS",
     "path":"folders/Sprites/BLOCKS.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":64,
+    "xorigin":32,
     "yorigin":32,
   },
   "swatchColours":null,
