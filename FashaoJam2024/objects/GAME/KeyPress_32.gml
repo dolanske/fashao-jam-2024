@@ -38,6 +38,21 @@ drop_cd = 50;
 // Reset clock / sprite animation
 sprite_animation_frame = 0
 
+// ================== 
+// THIS IS FOR TESTING
+//if (current_block_type == BlockType.CLOCK) {
+//	current_block_sprite = spr_block_bullet
+//	current_block_type = BlockType.BULLET
+//} else {
+//	current_block_sprite = spr_block_clock
+//	current_block_type = BlockType.CLOCK
+	
+//	call_later(20, time_source_units_frames, function() {
+//		alarm[1] = CLOCK_TIMING * (JERAB_SPEED_DEFAULT / jerab_speed)
+//	})
+//}
+// =================
+
 // Select next block after the current one was dropped
 var chance = random(10)
 
@@ -57,7 +72,7 @@ if (chance < 7) {
 	
 	if (block_choice.type == BlockType.CLOCK) {
 		call_later(20, time_source_units_frames, function() {
-			alarm[1] = CLOCK_TIMING * (jerab_speed / JERAB_SPEED_DEFAULT)
+			alarm[1] = CLOCK_TIMING * (JERAB_SPEED_DEFAULT / jerab_speed)
 		})
 	}
 } else if (chance >= 9) {
