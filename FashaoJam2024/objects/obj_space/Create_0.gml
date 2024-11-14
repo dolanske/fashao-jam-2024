@@ -7,5 +7,5 @@ depth = 5;
 
 image_speed = 0;
 
-y = -1400;
+y = -1300;
 ystart = y;
