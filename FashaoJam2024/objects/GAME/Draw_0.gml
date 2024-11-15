@@ -10,8 +10,8 @@ var cam_y = camera_get_view_y(cam);
 var joint_x = cam_x+cam_w/2;
 var joint_y = cam_y-500;
 
-var start_x = CAMERA.x - CAMERA.camera_w / 2 + 8
-var start_y = CAMERA.y - CAMERA.camera_h / 2 + 8
+var start_x = cam_x + 8
+var start_y = cam_y + 8
 
 if (state == GameState.INTRO) {
 	///////////////////////////////////////////////////
@@ -73,7 +73,7 @@ if (state == GameState.INTRO) {
 		draw_set_color(c_black)
 		for (var i = 1; i < string_length(combo_text)+1; i++){
 			var letter = string_char_at(combo_text,i);
-			draw_sprite_ext(asset_get_index("spr_" + string(letter) + "_tier"),0,start_x+40+(i-1)*64-floor((i-1)/5)*5*64,start_y+96+floor((i-1)/5)*48,random_range(0.4,0.6),random_range(0.4,0.6),random_range(-5,5),c_white,1);
+			draw_sprite_ext(asset_get_index("spr_" + string(letter) + "_tier"),0,start_x+40+(i-1)*64-floor((i-1)/5)*5*64,start_y+48+floor((i-1)/5)*48,random_range(0.4,0.6),random_range(0.4,0.6),random_range(-5,5),c_white,1);
 		}
 		
 		draw_set_color(c_white)

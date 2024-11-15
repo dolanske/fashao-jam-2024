@@ -1,4 +1,4 @@
-depth = -1;
+depth = -6;
 friction = 2;
 speed = random_range(4,15);
 image_angle = 0;

@@ -1,7 +1,9 @@
 swing_smooth = approach(swing_smooth, swing, 0.05)
 
 dir = sin(a)*amplitude*swing_smooth;
-a += 0.05;
+
+
+a += 0.05*(GAME.jerab_speed/GAME.JERAB_SPEED_DEFAULT);
 
 image_angle = dir;
 

@@ -9,7 +9,8 @@ image_a = 1;
 
 depth = choose(7,8,9);
 
-hspeed = sign(cam_x-x)/depth*10;
+hspeed_base = sign(cam_x-x)/depth*10;
+hspeed = hspeed_base;
 image_speed = 0;
 image_index = choose(0,1,2,3);
 

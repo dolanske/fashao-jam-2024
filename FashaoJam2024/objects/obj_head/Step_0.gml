@@ -10,3 +10,5 @@ y_shake = random_range(-10,10);
 	y_offset = lerp(y_offset,0,0.2);
 	if (life = 0) instance_destroy();
 }
+
+depth = -6;

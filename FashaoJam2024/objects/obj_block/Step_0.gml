@@ -56,6 +56,12 @@ if (state == BlockState.FALLING) {
 				}
 			}
 			
+			//repair camera
+			//var dist = point_distance(x,y,obj_stem.x,obj_stem.y);
+			//var sdir = point_direction(obj_stem.x,obj_stem.y,x,y);
+			//var ang_diff = angle_difference(sdir,obj_stem.dir);
+			//CAMERA.target_x = obj_stem.x+lengthdir_x(dist/4,ang_diff);
+			
 			// Calculate score based on the distance between 
 			// the center and the nearest block center
 			var offset = abs(x - nearest.x);
@@ -114,13 +120,13 @@ if (state == BlockState.FALLING) {
 			
 			// Rare healing block
 			if (type == BlockType.HEAL) {
-				repeat(5){
-					var vfx = instance_create_depth(x,y,0,obj_heart_vfx);
-					vfx.direction = random(360);
-					vfx.vspeed = - 10;
-					vfx.speed = random_range(20,30);
-				}
 				GAME.hp += 1
+				repeat(GAME.hp+1){
+					var vfx = instance_create_depth(x,y,0,obj_heart_vfx);
+					vfx.direction = 90+random_range(-15,15);
+					vfx.speed = random_range(20,20);
+				}
+				image_index = 1;
 				call_later(15, time_source_units_frames, function () {
 					audio_play_sound(sfx_heal, 1, false)
 				})

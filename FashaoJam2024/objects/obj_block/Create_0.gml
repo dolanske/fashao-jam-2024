@@ -44,6 +44,12 @@ function missed_block(speed_prev, nearest = undefined) {
 	CAMERA.shake += 10;
 	GAME.stats.total_misses += 1
 	
+	//HP VFX
+	var god = instance_create_depth(x,y,-4,obj_god);
+	if (GAME.hp = -1){
+		god.image_index = 1;
+	}
+	
 	// Show a block tumbling down
 	if (nearest != noone && !is_undefined(nearest)) {
 		var vfx = instance_create_depth(x,y-sprite_get_height(sprite_index)/2,depth-1,obj_block_falling);
