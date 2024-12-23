@@ -49,10 +49,16 @@ if (state == BlockState.FALLING) {
 					block_dist ++;
 				}
 			} else {
+				var counter = 0;
 				while (!place_meeting(x,y,[obj_block,obj_stem])){
 					x += lengthdir_x(1,image_angle);
 					y += lengthdir_y(1,image_angle);
 					block_dist --;
+					counter ++;
+					if (counter > 100){
+						missed_block(speed_prev, nearest);
+						return;
+					}
 				}
 			}
 			

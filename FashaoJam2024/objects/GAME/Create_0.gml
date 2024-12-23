@@ -1,5 +1,9 @@
 randomize()
 
+key_space = virtual_key_add(0,0,3600,6400,vk_space);
+
+key_restart = virtual_key_add(0,0,3600,6400,ord("R"));
+
 depth = -3;
 
 enum GameState {

@@ -1,5 +1,6 @@
 // Restart game. 
 // Everything that needs to reset to default as if the game was truly restarted
+if (state != GameState.END) exit;
 
 with (obj_block) {
 	instance_destroy()
